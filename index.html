@@ -42,14 +42,14 @@
             --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
-        /* 다크모드 CSS 변수 */
+        /* 개선된 다크모드 CSS 변수 */
         [data-theme="dark"] {
-            --text-primary: #e2e8f0;
-            --text-secondary: #a0aec0;
-            --text-light: #718096;
-            --background-gradient: linear-gradient(135deg, #2d3748 0%, #1a202c 100%);
-            --card-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
-            --card-hover-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+            --text-primary: #f7fafc;
+            --text-secondary: #e2e8f0;
+            --text-light: #cbd5e0;
+            --background-gradient: linear-gradient(135deg, #4a5568 0%, #2d3748 100%);
+            --card-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            --card-hover-shadow: 0 20px 40px rgba(0, 0, 0, 0.7);
         }
 
         body {
@@ -92,7 +92,8 @@
         }
 
         [data-theme="dark"] .header {
-            background: rgba(45, 62, 80, 0.95);
+            background: rgba(74, 85, 104, 0.95);
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
         }
 
         .nav-container {
@@ -236,7 +237,7 @@
             }
         }
 
-        /* 메인 컨텐츠 */
+        /* 개선된 메인 컨텐츠 */
         .main-content {
             background: white;
             border-radius: var(--border-radius) var(--border-radius) 0 0;
@@ -247,7 +248,8 @@
         }
 
         [data-theme="dark"] .main-content {
-            background: #1a202c;
+            background: #2d3748;
+            border: 1px solid #4a5568;
         }
 
         .section {
@@ -280,6 +282,7 @@
             margin-bottom: 3rem;
         }
 
+        /* 개선된 카드 스타일 */
         .tool-card {
             background: white;
             border-radius: var(--border-radius);
@@ -293,8 +296,9 @@
         }
 
         [data-theme="dark"] .tool-card {
-            background: #2d3748;
-            border-color: rgba(255, 255, 255, 0.1);
+            background: #4a5568;
+            border: 2px solid #718096;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
         }
 
         .tool-card::before {
@@ -312,6 +316,11 @@
         .tool-card:hover {
             transform: translateY(-10px);
             box-shadow: var(--card-hover-shadow);
+        }
+
+        [data-theme="dark"] .tool-card:hover {
+            border-color: #a0aec0;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.8);
         }
 
         .tool-card:hover::before {
@@ -409,7 +418,7 @@
             outline-offset: 2px;
         }
 
-        /* 통계 섹션 */
+        /* 개선된 통계 섹션 */
         .stats-section {
             background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 100%);
             padding: 4rem 0;
@@ -417,7 +426,8 @@
         }
 
         [data-theme="dark"] .stats-section {
-            background: linear-gradient(135deg, #2d3748 0%, #1a202c 100%);
+            background: linear-gradient(135deg, #1a202c 0%, #2d3748 100%);
+            border: 1px solid #4a5568;
         }
 
         .stats-grid {
@@ -444,14 +454,16 @@
             margin-top: 0.5rem;
         }
 
-        /* 소개 섹션 */
+        /* 개선된 소개 섹션 */
         .about-section {
             background: white;
             padding: 4rem 0;
         }
 
         [data-theme="dark"] .about-section {
-            background: #1a202c;
+            background: #2d3748;
+            border-top: 1px solid #4a5568;
+            border-bottom: 1px solid #4a5568;
         }
 
         .about-content {
@@ -527,6 +539,7 @@
 
         [data-theme="dark"] .footer {
             background: #1a202c;
+            border-top: 1px solid #4a5568;
         }
 
         .footer-content {
@@ -1078,11 +1091,11 @@
             
             if (scrollTop > 100) {
                 header.style.background = document.documentElement.getAttribute('data-theme') === 'dark' 
-                    ? 'rgba(45, 62, 80, 0.98)' 
+                    ? 'rgba(74, 85, 104, 0.98)' 
                     : 'rgba(255, 255, 255, 0.98)';
             } else {
                 header.style.background = document.documentElement.getAttribute('data-theme') === 'dark' 
-                    ? 'rgba(45, 62, 80, 0.95)' 
+                    ? 'rgba(74, 85, 104, 0.95)' 
                     : 'rgba(255, 255, 255, 0.95)';
             }
             
