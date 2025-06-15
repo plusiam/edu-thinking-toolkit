@@ -32,6 +32,7 @@
     <link rel="stylesheet" href="assets/css/themes.css">
     <link rel="stylesheet" href="assets/css/animations.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/search-filter.css">
     
     <!-- Preconnect to external resources -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -91,6 +92,38 @@
                 <p class="section-subtitle">
                     학생들의 생각을 구조화하고 시각화하는 검증된 교육 도구들을 만나보세요
                 </p>
+                
+                <!-- 검색 섹션 -->
+                <div class="search-section">
+                    <div class="search-wrapper">
+                        <span class="search-icon" aria-hidden="true">🔍</span>
+                        <input 
+                            type="search" 
+                            id="search-input" 
+                            class="search-input" 
+                            placeholder="도구 이름이나 기능으로 검색..."
+                            aria-label="도구 검색"
+                        >
+                        <button 
+                            type="button" 
+                            id="search-clear" 
+                            class="search-clear"
+                            aria-label="검색어 지우기"
+                        >
+                            ✕
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- 카테고리 필터 -->
+                <div class="filter-section" id="category-filter">
+                    <!-- 카테고리 버튼들이 JavaScript로 동적으로 로드됩니다 -->
+                </div>
+                
+                <!-- 결과 정보 -->
+                <div class="result-info">
+                    <p id="result-count"></p>
+                </div>
                 
                 <div class="tools-grid" id="tools-grid">
                     <!-- 도구 카드들이 JavaScript로 동적으로 로드됩니다 -->
@@ -205,66 +238,6 @@
     <!-- JavaScript Files -->
     <script src="assets/js/main.js"></script>
     <script src="assets/js/theme-switcher.js"></script>
-    
-    <!-- 도구 데이터 로드 및 렌더링 -->
-    <script>
-        // 도구 데이터 로드 및 렌더링
-        fetch('data/tools.json')
-            .then(response => response.json())
-            .then(data => {
-                renderTools(data.tools);
-                renderFooterTools(data.tools);
-                updateToolsCount(data.metadata.totalTools);
-            })
-            .catch(error => {
-                console.error('도구 데이터 로드 실패:', error);
-                // 폴백: 기본 HTML 구조 유지
-            });
-
-        function renderTools(tools) {
-            const toolsGrid = document.getElementById('tools-grid');
-            if (!toolsGrid) return;
-
-            toolsGrid.innerHTML = tools.map(tool => `
-                <article class="tool-card fade-in" data-tool="${tool.id}">
-                    ${tool.isNew ? '<span class="new-badge">NEW</span>' : ''}
-                    <div class="tool-icon" aria-hidden="true">${tool.icon}</div>
-                    <h3 class="tool-title">${tool.title}</h3>
-                    <p class="tool-description">${tool.description}</p>
-                    <ul class="tool-features">
-                        ${tool.features.map(feature => `<li>${feature}</li>`).join('')}
-                    </ul>
-                    <a href="${tool.url}" 
-                       class="tool-button" 
-                       target="_blank" 
-                       rel="noopener"
-                       aria-describedby="${tool.id}-desc">
-                        ${tool.title} 사용하기
-                    </a>
-                    <div id="${tool.id}-desc" class="sr-only">새 창에서 ${tool.title} 도구를 엽니다</div>
-                </article>
-            `).join('');
-
-            // 스크롤 애니메이션 재초기화
-            initScrollAnimations();
-            initToolCardInteractions();
-        }
-
-        function renderFooterTools(tools) {
-            const footerToolsList = document.getElementById('footer-tools-list');
-            if (!footerToolsList) return;
-
-            footerToolsList.innerHTML = tools.map(tool => 
-                `<p><a href="${tool.url}" target="_blank" rel="noopener">${tool.title}</a></p>`
-            ).join('');
-        }
-
-        function updateToolsCount(count) {
-            const toolsCountElement = document.getElementById('tools-count');
-            if (toolsCountElement) {
-                toolsCountElement.textContent = count;
-            }
-        }
-    </script>
+    <script src="assets/js/tools-manager.js"></script>
 </body>
 </html>
