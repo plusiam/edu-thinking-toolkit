@@ -1,0 +1,246 @@
+/* 
+ * 생각이 보이는 교실 - 애니메이션 스타일시트
+ * Animation definitions for interactive effects
+ */
+
+/* ===== 기본 애니메이션 ===== */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% { 
+        transform: scale(1); 
+    }
+    50% { 
+        transform: scale(1.05); 
+    }
+}
+
+@keyframes rotate {
+    from { 
+        transform: rotate(0deg); 
+    }
+    to { 
+        transform: rotate(360deg); 
+    }
+}
+
+@keyframes sparkle {
+    0%, 100% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes pulse-badge {
+    0%, 100% {
+        transform: scale(1);
+        box-shadow: 0 2px 10px rgba(255, 107, 107, 0.5);
+    }
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 4px 20px rgba(255, 107, 107, 0.7);
+    }
+}
+
+/* ===== 도구 카드 그라디언트 애니메이션 ===== */
+.tool-card:nth-child(1) .tool-icon {
+    background: linear-gradient(135deg, #ff6b6b, #ee5a6f);
+}
+
+.tool-card:nth-child(2) .tool-icon {
+    background: linear-gradient(135deg, #4ecdc4, #44a08d);
+}
+
+.tool-card:nth-child(3) .tool-icon {
+    background: linear-gradient(135deg, #45b7d1, #96c93d);
+}
+
+.tool-card:nth-child(4) .tool-icon {
+    background: linear-gradient(135deg, #a55eea, #fd79a8);
+}
+
+.tool-card:nth-child(5) .tool-icon {
+    background: linear-gradient(135deg, #f7931e, #ff6f00);
+}
+
+.tool-card:nth-child(6) .tool-icon {
+    background: linear-gradient(135deg, #26c6da, #0097a7);
+}
+
+.tool-card:nth-child(7) .tool-icon {
+    background: linear-gradient(135deg, #e91e63, #ad1457);
+}
+
+.tool-card:nth-child(8) .tool-icon {
+    background: linear-gradient(135deg, #9c27b0, #6a1b9a);
+}
+
+.tool-card:nth-child(9) .tool-icon {
+    background: linear-gradient(135deg, #00bcd4, #009688);
+}
+
+.tool-card:nth-child(10) .tool-icon {
+    background: linear-gradient(135deg, #3b82f6, #0891b2);
+}
+
+.tool-card:nth-child(11) .tool-icon {
+    background: linear-gradient(135deg, #f59e0b, #d97706);
+}
+
+.tool-card:nth-child(12) .tool-icon {
+    background: linear-gradient(135deg, #8b5cf6, #7c3aed);
+}
+
+.tool-card:nth-child(13) .tool-icon {
+    background: linear-gradient(135deg, #06b6d4, #0891b2);
+}
+
+.tool-card:nth-child(14) .tool-icon {
+    background: linear-gradient(135deg, #10b981, #059669);
+}
+
+/* ===== 호버 효과 애니메이션 ===== */
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes bounceIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.3);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.05);
+    }
+    70% {
+        transform: scale(0.9);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* ===== 로딩 애니메이션 ===== */
+@keyframes shimmer {
+    0% {
+        background-position: -1000px 0;
+    }
+    100% {
+        background-position: 1000px 0;
+    }
+}
+
+.loading {
+    background: linear-gradient(
+        90deg,
+        #f0f0f0 25%,
+        #e0e0e0 50%,
+        #f0f0f0 75%
+    );
+    background-size: 1000px 100%;
+    animation: shimmer 2s infinite;
+}
+
+/* ===== 스크롤 인디케이터 ===== */
+@keyframes scroll-down {
+    0% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+    30% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+}
+
+.scroll-indicator {
+    animation: scroll-down 2s ease-out infinite;
+}
+
+/* ===== 타이핑 효과 ===== */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: var(--primary-color);
+    }
+}
+
+.typing-effect {
+    overflow: hidden;
+    border-right: 3px solid var(--primary-color);
+    white-space: nowrap;
+    animation: 
+        typing 3.5s steps(40, end),
+        blink-caret 0.75s step-end infinite;
+}
+
+/* ===== 플로팅 효과 ===== */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.floating {
+    animation: float 3s ease-in-out infinite;
+}
+
+/* ===== 웨이브 효과 ===== */
+@keyframes wave {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    20% {
+        transform: rotate(-10deg);
+    }
+    40% {
+        transform: rotate(10deg);
+    }
+    60% {
+        transform: rotate(-5deg);
+    }
+    80% {
+        transform: rotate(5deg);
+    }
+}
+
+.wave-animation {
+    animation: wave 2s ease-in-out infinite;
+    transform-origin: center bottom;
+}
