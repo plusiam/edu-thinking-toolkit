@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>오프라인 - 생각이 보이는 교실</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Malgun Gothic', '맑은 고딕', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #2c3e50;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+        }
+
+        .offline-container {
+            background: white;
+            border-radius: 20px;
+            padding: 3rem;
+            text-align: center;
+            max-width: 600px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        .offline-icon {
+            font-size: 5rem;
+            margin-bottom: 2rem;
+            filter: grayscale(50%);
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: #2c3e50;
+        }
+
+        p {
+            color: #546e7a;
+            margin-bottom: 1.5rem;
+        }
+
+        .tools-list {
+            text-align: left;
+            margin: 2rem 0;
+            padding: 2rem;
+            background: #f8f9fa;
+            border-radius: 12px;
+        }
+
+        .tools-list h2 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            color: #4a90e2;
+        }
+
+        .tools-list ul {
+            list-style: none;
+        }
+
+        .tools-list li {
+            padding: 0.5rem 0;
+            color: #546e7a;
+        }
+
+        .tools-list li::before {
+            content: '🧠';
+            margin-right: 0.5rem;
+        }
+
+        .retry-button {
+            background: #4a90e2;
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 12px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .retry-button:hover {
+            transform: translateY(-2px);
+        }
+
+        .status-info {
+            margin-top: 2rem;
+            padding: 1rem;
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 8px;
+            color: #856404;
+        }
+    </style>
+</head>
+<body>
+    <div class="offline-container">
+        <div class="offline-icon">📡</div>
+        <h1>오프라인 상태입니다</h1>
+        <p>
+            인터넷 연결이 끊어진 것 같습니다. 
+            연결이 복구되면 모든 기능을 다시 사용할 수 있습니다.
+        </p>
+
+        <div class="tools-list">
+            <h2>생각이 보이는 교실의 도구들</h2>
+            <ul>
+                <li>프레이어 모델 - 개념 분석 도구</li>
+                <li>3-2-1 브릿지 - 학습 전후 비교</li>
+                <li>See-Think-Wonder - 관찰과 탐구</li>
+                <li>ORID 성찰 도구 - 4단계 성찰</li>
+                <li>ABC 생각바꾸기 - 정서 조절</li>
+                <li>step-inside - 공감 도구</li>
+                <li>Connect-Extend-Challenge - 연결과 확장</li>
+                <li>생각-퍼즐-탐구 - 체계적 탐구</li>
+                <li>Color, Symbol, Image - 시각적 사고</li>
+                <li>그 외 다양한 사고가시화 도구들...</li>
+            </ul>
+        </div>
+
+        <button class="retry-button" onclick="location.reload()">
+            다시 시도하기
+        </button>
+
+        <div class="status-info">
+            <strong>💡 알림:</strong> 
+            오프라인 상태에서도 이미 방문한 페이지는 캐시에서 불러올 수 있습니다.
+        </div>
+    </div>
+
+    <script>
+        // 온라인 상태가 되면 자동으로 홈페이지로 이동
+        window.addEventListener('online', function() {
+            window.location.href = '/';
+        });
+    </script>
+</body>
+</html>
