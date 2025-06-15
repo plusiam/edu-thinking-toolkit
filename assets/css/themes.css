@@ -1,0 +1,112 @@
+/* 
+ * 생각이 보이는 교실 - 테마 스타일시트
+ * Theme stylesheet for dark mode and theme variations
+ */
+
+/* ===== 다크모드 스타일 ===== */
+[data-theme="dark"] {
+    --text-primary: #f7fafc;
+    --text-secondary: #e2e8f0;
+    --text-light: #cbd5e0;
+    --background-gradient: linear-gradient(135deg, #4a5568 0%, #2d3748 100%);
+    --card-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    --card-hover-shadow: 0 20px 40px rgba(0, 0, 0, 0.7);
+}
+
+[data-theme="dark"] .header {
+    background: rgba(74, 85, 104, 0.95);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="dark"] .main-content {
+    background: #2d3748;
+    border: 1px solid #4a5568;
+}
+
+[data-theme="dark"] .tool-card {
+    background: #4a5568;
+    border: 2px solid #718096;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+}
+
+[data-theme="dark"] .tool-card:hover {
+    border-color: #a0aec0;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.8);
+}
+
+[data-theme="dark"] .stats-section {
+    background: linear-gradient(135deg, #1a202c 0%, #2d3748 100%);
+    border: 1px solid #4a5568;
+}
+
+[data-theme="dark"] .about-section {
+    background: #2d3748;
+    border-top: 1px solid #4a5568;
+    border-bottom: 1px solid #4a5568;
+}
+
+[data-theme="dark"] .footer {
+    background: #1a202c;
+    border-top: 1px solid #4a5568;
+}
+
+/* ===== 테마 토글 버튼 ===== */
+.theme-toggle {
+    background: none;
+    border: 2px solid var(--primary-color);
+    border-radius: 50px;
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    transition: var(--transition);
+    font-size: 0.9rem;
+    color: var(--primary-color);
+    margin-left: 1rem;
+}
+
+.theme-toggle:hover {
+    background: var(--primary-color);
+    color: white;
+    transform: scale(1.05);
+}
+
+.theme-toggle:focus-visible {
+    outline: 3px solid var(--accent-color);
+    outline-offset: 2px;
+}
+
+.theme-icon {
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+}
+
+[data-theme="dark"] .theme-icon.sun {
+    transform: rotate(180deg);
+}
+
+/* ===== 고대비 모드 지원 ===== */
+@media (prefers-contrast: high) {
+    :root {
+        --card-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+        --border-radius: 8px;
+    }
+    
+    .tool-card {
+        border: 2px solid var(--text-primary);
+    }
+}
+
+/* ===== 시스템 테마 설정 감지 ===== */
+@media (prefers-color-scheme: dark) {
+    /* 사용자가 테마를 수동으로 설정하지 않은 경우 적용 */
+    :root:not([data-theme]) {
+        --text-primary: #f7fafc;
+        --text-secondary: #e2e8f0;
+        --text-light: #cbd5e0;
+        --background-gradient: linear-gradient(135deg, #4a5568 0%, #2d3748 100%);
+        --card-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        --card-hover-shadow: 0 20px 40px rgba(0, 0, 0, 0.7);
+    }
+}
