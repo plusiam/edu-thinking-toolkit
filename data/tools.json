@@ -224,6 +224,21 @@
       "url": "https://plusiam.github.io/sentence-phrase-word/",
       "category": "inquiry",
       "isNew": true
+    },
+    {
+      "id": "circle-of-viewpoints",
+      "title": "인터랙티브 관점의 원",
+      "icon": "🎯",
+      "description": "하나의 주제에 대해 다양한 관점에서 생각해보고 탐구할 수 있도록 돕는 인터랙티브 사고가시화 도구입니다. 하버드 프로젝트 제로의 Circle of Viewpoints 루틴을 디지털로 구현했습니다.",
+      "features": [
+        "인터랙티브 룰렛으로 관점 선택",
+        "구조화된 3단계 탐구 과정",
+        "실시간 진행률 추적",
+        "탐구 결과 이미지 저장"
+      ],
+      "url": "https://plusiam.github.io/interactive-viewpoints-circle/",
+      "category": "empathy",
+      "isNew": true
     }
   ],
   "categories": [
@@ -276,7 +291,7 @@
   "metadata": {
     "version": "2.0",
     "lastUpdated": "2025-06-15",
-    "totalTools": 15,
+    "totalTools": 16,
     "author": "룰루랄라 한기쌤"
   }
 }
