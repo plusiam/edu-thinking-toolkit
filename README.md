@@ -1,7 +1,7 @@
 # 🧠 생각이 보이는 교실 - 사고가시화 전략 허브
 
 [![License](https://img.shields.io/badge/license-Educational%20Use-blue.svg)](LICENSE)
-[![Tools](https://img.shields.io/badge/tools-14%20available-green.svg)](https://plusiam.github.io/edu-thinking-toolkit/)
+[![Tools](https://img.shields.io/badge/tools-16%20available-green.svg)](https://plusiam.github.io/edu-thinking-toolkit/)
 [![Maintained](https://img.shields.io/badge/maintained-yes-brightgreen.svg)](https://github.com/plusiam/edu-thinking-toolkit/commits/main)
 
 교육자를 위한 사고가시화(Visible Thinking) 도구 모음집입니다. 하버드 프로젝트 제로(Project Zero)의 연구를 바탕으로 한국 교육 현장에 최적화된 디지털 도구들을 제공합니다.
@@ -39,6 +39,7 @@
 - **[ORID 성찰 도구](https://plusiam.github.io/orid-reflection-tool/)**: 객관적-반응적-해석적-결정적 4단계 성찰
 - **[ABC 생각바꾸기](https://plusiam.github.io/abc-think/)**: 정서 조절과 건강한 사고 패턴 형성
 - **[step-inside](https://plusiam.github.io/step-inside-worksheet/)**: 타인의 입장에서 생각해보는 공감 도구
+- **[인터랙티브 관점의 원](https://plusiam.github.io/interactive-viewpoints-circle/)** 🆕: 다양한 관점에서 주제를 탐구하는 인터랙티브 도구
 
 ### 🎨 창의적 표현 도구
 - **[나만의 한 줄 요약](https://plusiam.github.io/headline-maker-kids/)**: 핵심 내용을 간결하게 요약하는 능력 개발
@@ -59,6 +60,7 @@
 ### 사회/도덕 수업
 - 역사적 인물 학습 시 **step-inside**로 공감 능력 기르기
 - 단원 학습 전후 **3-2-1 브릿지**로 사고 변화 추적하기
+- 사회 문제 토론 시 **인터랙티브 관점의 원**으로 다각도 분석
 
 ### 과학 수업
 - 실험 관찰 시 **See-Think-Wonder**로 과학적 탐구력 향상
@@ -84,7 +86,7 @@
 
 ## 📊 프로젝트 현황
 
-- **총 도구 수**: 14개 (지속적으로 추가 예정)
+- **총 도구 수**: 16개 (지속적으로 추가 예정)
 - **지원 언어**: 한국어
 - **접근성**: WCAG 2.1 AA 기준 준수 목표
 - **브라우저 지원**: Chrome, Firefox, Safari, Edge 최신 버전
