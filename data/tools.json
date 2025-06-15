@@ -209,6 +209,21 @@
       "url": "https://plusiam.github.io/generate-classify-connect-elaborate/",
       "category": "creative",
       "isNew": true
+    },
+    {
+      "id": "sentence-phrase-word",
+      "title": "문장-구절-단어",
+      "icon": "📚",
+      "description": "텍스트에서 의미있는 문장을 선택하고, 핵심 구절을 찾아, 중요한 단어를 추출하는 체계적인 텍스트 분석 도구입니다. 하버드 Project Zero의 Visible Thinking 루틴입니다.",
+      "features": [
+        "체계적인 텍스트 분석",
+        "구조적 사고력 향상",
+        "문학 작품 탐구 최적화",
+        "1페이지 인쇄 완벽 지원"
+      ],
+      "url": "https://plusiam.github.io/sentence-phrase-word/",
+      "category": "inquiry",
+      "isNew": true
     }
   ],
   "categories": [
@@ -261,7 +276,7 @@
   "metadata": {
     "version": "2.0",
     "lastUpdated": "2025-06-15",
-    "totalTools": 14,
+    "totalTools": 15,
     "author": "룰루랄라 한기쌤"
   }
 }
