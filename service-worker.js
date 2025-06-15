@@ -3,10 +3,12 @@
  * PWA 지원 및 오프라인 캐싱
  */
 
-const CACHE_NAME = 'thinking-classroom-v1';
+const CACHE_NAME = 'thinking-classroom-v1.1';
 const urlsToCache = [
   '/',
   '/index.html',
+  '/offline.html',
+  '/manifest.json',
   '/assets/css/main.css',
   '/assets/css/themes.css',
   '/assets/css/animations.css',
