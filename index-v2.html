@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="초등교육을 위한 사고가시화 전략 도구 모음. 도입·탐구, 종합·체계화, 심화의 3단계 체계로 구성된 하버드 프로젝트 제로 기반 사고 루틴을 제공합니다.">
+    <meta name="keywords" content="사고가시화, 교육도구, 초등교육, 하버드 프로젝트 제로, See-Think-Wonder, ORID, 사고루틴, 비저블씽킹">
+    <meta name="author" content="룰루랄라 한기쌤">
+    <title>생각이 보이는 교실 - 3단계 사고가시화 전략 허브</title>
+    
+    <!-- PWA 메타 태그 -->
+    <meta name="theme-color" content="#4a90e2">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="사고가시화">
+    <meta name="mobile-web-app-capable" content="yes">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://plusiam.github.io/edu-thinking-toolkit/">
+    <meta property="og:title" content="생각이 보이는 교실 - 3단계 사고가시화 전략 허브">
+    <meta property="og:description" content="도입·탐구, 종합·체계화, 심화의 3단계 체계로 구성된 사고가시화 도구 모음">
+    <meta property="og:image" content="https://plusiam.github.io/edu-thinking-toolkit/assets/images/og-image.png">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://plusiam.github.io/edu-thinking-toolkit/">
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="/manifest.json">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="assets/css/main-v2.css">
+    <link rel="stylesheet" href="assets/css/stages.css">
+    <link rel="stylesheet" href="assets/css/recommendations.css">
+    
+    <!-- Preconnect to external resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 접근성을 위한 스킵 링크 -->
+    <a href="#main-content" class="sr-only">본문으로 바로가기</a>
+    
+    <!-- 오프라인 인디케이터 -->
+    <div class="offline-indicator">
+        <span>오프라인 모드</span>
+    </div>
+
+    <!-- 헤더 -->
+    <header class="header" role="banner">
+        <nav class="nav-container" role="navigation">
+            <a href="#" class="logo" aria-label="생각이 보이는 교실 홈">
+                <div class="logo-icon" aria-hidden="true">🧠</div>
+                <span>생각이 보이는 교실</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="#stages" class="nav-link">3단계 도구</a></li>
+                <li><a href="#recommend" class="nav-link">추천 도구</a></li>
+                <li><a href="#pathways" class="nav-link">학습 경로</a></li>
+                <li><a href="#about" class="nav-link">소개</a></li>
+                <li>
+                    <button 
+                        class="theme-toggle" 
+                        id="theme-toggle" 
+                        aria-label="다크모드 토글"
+                        title="테마 변경"
+                    >
+                        <span class="theme-icon">☀️</span>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 히어로 섹션 -->
+    <section class="hero" role="banner">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="hero-emoji">🌱</span>
+                생각이 보이는 교실
+                <span class="hero-subtitle">3단계 사고가시화 전략 허브</span>
+            </h1>
+            <p class="hero-description">
+                하버드 프로젝트 제로의 검증된 사고 루틴을 
+                <strong>도입·탐구 → 종합·체계화 → 심화</strong>의 
+                3단계 체계로 구성하여 제공합니다.
+            </p>
+            
+            <!-- 단계별 시각적 흐름 표시 -->
+            <div class="stage-flow">
+                <div class="stage-item exploration">
+                    <span class="stage-icon">🟡</span>
+                    <span class="stage-name">도입·탐구</span>
+                </div>
+                <span class="flow-arrow">→</span>
+                <div class="stage-item synthesis">
+                    <span class="stage-icon">🟠</span>
+                    <span class="stage-name">종합·체계화</span>
+                </div>
+                <span class="flow-arrow">→</span>
+                <div class="stage-item deepening">
+                    <span class="stage-icon">🔵</span>
+                    <span class="stage-name">심화</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 메인 컨텐츠 -->
+    <main class="main-content" id="main-content">
+        
+        <!-- 빠른 추천 섹션 -->
+        <section class="quick-recommend" id="recommend">
+            <div class="container">
+                <h2 class="section-title">🎯 맞춤형 도구 추천</h2>
+                <p class="section-subtitle">수업 상황에 맞는 사고가시화 도구를 추천받아보세요</p>
+                
+                <div class="recommend-wizard">
+                    <div class="wizard-controls">
+                        <div class="control-group">
+                            <label for="subject-select">과목 선택</label>
+                            <select id="subject-select" class="form-select">
+                                <option value="">전체 과목</option>
+                                <option value="korean">국어</option>
+                                <option value="math">수학</option>
+                                <option value="science">과학</option>
+                                <option value="social">사회</option>
+                                <option value="art">예술</option>
+                            </select>
+                        </div>
+                        
+                        <div class="control-group">
+                            <label for="theme-select">학습 주제</label>
+                            <select id="theme-select" class="form-select" disabled>
+                                <option value="">과목을 먼저 선택하세요</option>
+                            </select>
+                        </div>
+                        
+                        <button class="recommend-btn" id="get-recommendation" disabled>
+                            추천받기 ✨
+                        </button>
+                    </div>
+                    
+                    <div id="recommendation-result" class="recommendation-result" style="display: none;">
+                        <!-- 추천 결과가 여기에 표시됩니다 -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3단계 도구 섹션 -->
+        <section class="stages-section" id="stages">
+            <div class="container">
+                <h2 class="section-title">📚 단계별 사고가시화 도구</h2>
+                
+                <!-- 검색 기능 -->
+                <div class="search-section">
+                    <div class="search-wrapper">
+                        <span class="search-icon">🔍</span>
+                        <input 
+                            type="search" 
+                            id="search-input" 
+                            class="search-input" 
+                            placeholder="도구 이름, 기능, 과목으로 검색..."
+                            aria-label="도구 검색"
+                        >
+                    </div>
+                </div>
+
+                <!-- 1단계: 도입·탐구 -->
+                <div class="stage-section exploration-stage">
+                    <div class="stage-header">
+                        <h3 class="stage-title">
+                            <span class="stage-icon">🟡</span>
+                            1단계: 도입·탐구
+                        </h3>
+                        <p class="stage-description">
+                            호기심 유발, 탐구 질문 생성, 사전 지식 활성화
+                        </p>
+                    </div>
+                    <div class="tools-grid" id="exploration-tools">
+                        <!-- 도구 카드들이 JavaScript로 로드됩니다 -->
+                    </div>
+                </div>
+
+                <!-- 2단계: 종합·체계화 -->
+                <div class="stage-section synthesis-stage">
+                    <div class="stage-header">
+                        <h3 class="stage-title">
+                            <span class="stage-icon">🟠</span>
+                            2단계: 종합·체계화
+                        </h3>
+                        <p class="stage-description">
+                            정보 구조화, 개념 간 연결, 지식 체계 구축
+                        </p>
+                    </div>
+                    <div class="tools-grid" id="synthesis-tools">
+                        <!-- 도구 카드들이 JavaScript로 로드됩니다 -->
+                    </div>
+                </div>
+
+                <!-- 3단계: 심화 -->
+                <div class="stage-section deepening-stage">
+                    <div class="stage-header">
+                        <h3 class="stage-title">
+                            <span class="stage-icon">🔵</span>
+                            3단계: 심화
+                        </h3>
+                        <p class="stage-description">
+                            메타인지 발달, 관점 전환, 깊은 성찰
+                        </p>
+                    </div>
+                    <div class="tools-grid" id="deepening-tools">
+                        <!-- 도구 카드들이 JavaScript로 로드됩니다 -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 학습 경로 섹션 -->
+        <section class="pathways-section" id="pathways">
+            <div class="container">
+                <h2 class="section-title">🛤️ 추천 학습 경로</h2>
+                <p class="section-subtitle">목적에 따른 사고가시화 도구 활용 순서</p>
+                
+                <div class="pathways-grid">
+                    <div class="pathway-card creativity">
+                        <h4 class="pathway-title">💡 창의성 개발</h4>
+                        <div class="pathway-flow">
+                            <span class="pathway-step">Chalk Talk</span>
+                            <span class="arrow">→</span>
+                            <span class="pathway-step">Generate-Sort-Connect</span>
+                            <span class="arrow">→</span>
+                            <span class="pathway-step">CSI</span>
+                        </div>
+                    </div>
+                    
+                    <div class="pathway-card critical">
+                        <h4 class="pathway-title">🤔 비판적 사고</h4>
+                        <div class="pathway-flow">
+                            <span class="pathway-step">Compass Points</span>
+                            <span class="arrow">→</span>
+                            <span class="pathway-step">4C</span>
+                            <span class="arrow">→</span>
+                            <span class="pathway-step">Circle of Viewpoints</span>
+                        </div>
+                    </div>
+                    
+                    <div class="pathway-card collaboration">
+                        <h4 class="pathway-title">🤝 협력 학습</h4>
+                        <div class="pathway-flow">
+                            <span class="pathway-step">Think-Puzzle-Explore</span>
+                            <span class="arrow">→</span>
+                            <span class="pathway-step">Chalk Talk</span>
+                            <span class="arrow">→</span>
+                            <span class="pathway-step">Micro Lab</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 통계 섹션 -->
+        <section class="stats-section">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <span class="stat-number" id="tools-count">16</span>
+                        <div class="stat-label">검증된 사고 루틴</div>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">3</span>
+                        <div class="stat-label">체계적 단계</div>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">5</span>
+                        <div class="stat-label">교과 영역</div>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">∞</span>
+                        <div class="stat-label">활용 가능성</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 소개 섹션 -->
+        <section class="about-section" id="about">
+            <div class="container">
+                <h2 class="section-title">🌟 3단계 사고가시화 체계란?</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>
+                            하버드 프로젝트 제로(Project Zero)의 연구를 바탕으로, 
+                            사고가시화 전략을 학습의 흐름에 따라 3단계로 체계화했습니다.
+                        </p>
+                        <div class="stage-explanation">
+                            <div class="stage-item">
+                                <h4>🟡 1단계: 도입·탐구</h4>
+                                <p>개방적 질문과 호기심을 통해 사고를 시작하고, 탐구 질문을 형성합니다.</p>
+                            </div>
+                            <div class="stage-item">
+                                <h4>🟠 2단계: 종합·체계화</h4>
+                                <p>개념을 분류하고 연결하여 지식 구조를 형성하고, 시각화합니다.</p>
+                            </div>
+                            <div class="stage-item">
+                                <h4>🔵 3단계: 심화</h4>
+                                <p>자신의 생각을 반성하고, 관점을 확장하며, 변화된 사고를 표현합니다.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 푸터 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>생각이 보이는 교실</h4>
+                    <p>하버드 프로젝트 제로 기반의 사고가시화 전략을 한국 교육 현장에 맞게 재구성했습니다.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>개발자 정보</h4>
+                    <p><strong>룰루랄라 한기쌤</strong></p>
+                    <p>Facebook: <a href="https://www.facebook.com/playrurulala" target="_blank" rel="noopener">@playrurulala</a></p>
+                    <p>GitHub: <a href="https://github.com/plusiam" target="_blank" rel="noopener">@plusiam</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="copyright-year">2025</span> 생각이 보이는 교실. 교육을 위한 오픈소스 프로젝트입니다.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="assets/js/main-v2.js"></script>
+    <script src="assets/js/tools-loader-v2.js"></script>
+    <script src="assets/js/recommendation-engine.js"></script>
+</body>
+</html>
