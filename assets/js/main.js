@@ -12,12 +12,58 @@ document.addEventListener('DOMContentLoaded', function() {
     initSmoothScroll();
     initKeyboardNavigation();
     initToolCardInteractions();
+    registerServiceWorker();
     
     // 초기 네비게이션 상태 설정
     document.body.classList.add('mouse-navigation');
     
     console.log('🧠 생각이 보이는 교실 - 성공적으로 로드되었습니다!');
 });
+
+/**
+ * Service Worker 등록
+ */
+function registerServiceWorker() {
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+            navigator.serviceWorker.register('/service-worker.js')
+                .then(registration => {
+                    console.log('Service Worker 등록 성공:', registration.scope);
+                    
+                    // 업데이트 확인
+                    registration.addEventListener('updatefound', () => {
+                        const newWorker = registration.installing;
+                        newWorker.addEventListener('statechange', () => {
+                            if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
+                                // 새 버전이 있을 때 사용자에게 알림
+                                showUpdateNotification();
+                            }
+                        });
+                    });
+                })
+                .catch(error => {
+                    console.error('Service Worker 등록 실패:', error);
+                });
+        });
+    }
+}
+
+/**
+ * 업데이트 알림 표시
+ */
+function showUpdateNotification() {
+    const notification = document.createElement('div');
+    notification.className = 'update-notification';
+    notification.innerHTML = `
+        <p>새로운 버전이 있습니다!</p>
+        <button onclick="location.reload()">업데이트</button>
+    `;
+    document.body.appendChild(notification);
+    
+    setTimeout(() => {
+        notification.classList.add('show');
+    }, 100);
+}
 
 /**
  * 테마 초기화
@@ -237,12 +283,16 @@ window.addEventListener('error', function(e) {
  */
 window.addEventListener('online', function() {
     console.log('인터넷 연결이 복구되었습니다.');
+    document.body.classList.remove('offline');
 });
 
 window.addEventListener('offline', function() {
     console.log('인터넷 연결이 끊어졌습니다.');
+    document.body.classList.add('offline');
 });
 
 // 전역 함수로 내보내기
 window.setTheme = setTheme;
 window.trapFocus = trapFocus;
+window.initScrollAnimations = initScrollAnimations;
+window.initToolCardInteractions = initToolCardInteractions;
