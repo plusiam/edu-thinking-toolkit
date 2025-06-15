@@ -1,133 +1,139 @@
-# 🧠 생각이 보이는 교실 - 사고가시화 전략 허브
+# 🧠 생각이 보이는 교실 - 3단계 사고가시화 전략 허브
 
-[![License](https://img.shields.io/badge/license-Educational%20Use-blue.svg)](LICENSE)
-[![Tools](https://img.shields.io/badge/tools-16%20available-green.svg)](https://plusiam.github.io/edu-thinking-toolkit/)
-[![Maintained](https://img.shields.io/badge/maintained-yes-brightgreen.svg)](https://github.com/plusiam/edu-thinking-toolkit/commits/main)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![GitHub Pages](https://img.shields.io/badge/GitHub-Pages-blue)](https://plusiam.github.io/edu-thinking-toolkit/)
 
-교육자를 위한 사고가시화(Visible Thinking) 도구 모음집입니다. 하버드 프로젝트 제로(Project Zero)의 연구를 바탕으로 한국 교육 현장에 최적화된 디지털 도구들을 제공합니다.
+하버드 프로젝트 제로(Project Zero)의 검증된 사고가시화 전략을 **도입·탐구 → 종합·체계화 → 심화**의 3단계 체계로 재구성한 교육 도구 플랫폼입니다.
 
-## 🎯 프로젝트 소개
+## 🌟 특징
 
-**생각이 보이는 교실**은 학생들의 사고 과정을 시각화하여 더 깊이 있는 학습을 돕는 교육 도구 플랫폼입니다. 
+### 📚 3단계 사고가시화 체계
 
-### 주요 특징
-- ✨ **즉시 사용 가능**: 설치 없이 웹브라우저에서 바로 사용
-- 📱 **반응형 디자인**: PC, 태블릿, 모바일 모든 기기 지원
-- 🌙 **다크모드 지원**: 눈의 피로를 줄이는 다크 테마
-- ♿ **접근성 고려**: 모든 학습자를 위한 포용적 설계
-- 💾 **저장 기능**: PDF, 이미지 형식으로 결과물 저장 가능
-- 🔒 **개인정보 보호**: 서버 저장 없이 브라우저에서만 작동
+#### 🟡 1단계: 도입·탐구 (Exploration & Inquiry)
+- **목표**: 호기심 유발, 탐구 질문 생성, 사전 지식 활성화
+- **특징**: 개방적 사고, 관찰 중심, 질문 생성
+- **대표 도구**: See-Think-Wonder, Think-Puzzle-Explore, 3-2-1 Bridge
 
-## 🛠️ 포함된 사고가시화 도구들
+#### 🟠 2단계: 종합·체계화 (Synthesis & Organization)
+- **목표**: 정보 구조화, 개념 간 연결, 지식 체계 구축
+- **특징**: 구조적 사고, 시각적 표현, 연결적 사고
+- **대표 도구**: Headlines, CSI, Generate-Sort-Connect-Elaborate
 
-### 📊 개념 이해 도구
-- **[프레이어 모델](https://plusiam.github.io/frayer-model-worksheet/)**: 개념을 정의, 특성, 예시, 비례시로 나누어 체계적으로 분석
-- **[생성-분류-연결-정교화](https://plusiam.github.io/generate-classify-connect-elaborate/)**: 아이디어를 생성하고 분류하며 연결하는 4단계 사고 과정
+#### 🔵 3단계: 심화 (Deepening & Reflection)
+- **목표**: 메타인지 발달, 관점 전환, 깊은 성찰
+- **특징**: 성찰적 사고, 다원적 관점, 변화 인식
+- **대표 도구**: ORID, Step Inside, Circle of Viewpoints
 
-### 🔍 관찰과 탐구 도구
-- **[See-Think-Wonder](https://plusiam.github.io/see-think-wonder-worksheet/)**: 관찰, 추론, 질문 생성을 통한 탐구력 향상
-- **[See-Think-Wonder v2](https://plusiam.github.io/see-think-wonder-v2/)**: 향상된 UI/UX와 추가 기능을 제공하는 업그레이드 버전
-- **[See-Think-Wonder 학습지](https://plusiam.github.io/see-think-wonder-templet/)**: A4 가로 인쇄에 최적화된 템플릿
+### 🎯 과목별 맞춤 추천 시스템
+- 국어, 수학, 과학, 사회, 예술 등 교과별 최적화 도구 추천
+- 학습 주제별 사고가시화 경로 제안
+- 실제 수업 활용 예시 제공
 
-### 🤔 사고 확장 도구
-- **[3-2-1 브릿지](https://plusiam.github.io/321-bridge-worksheet/)**: 학습 전후의 생각 변화를 추적하고 연결
-- **[3-2-1 Bridge Enhanced v2.2](https://plusiam.github.io/321-bridge-worksheet/321.html)** 🆕: 1페이지 인쇄 최적화 및 실시간 진행률 표시
-- **[Connect-Extend-Challenge](https://plusiam.github.io/connect-extend-challengge-templates/)** 🆕: 사전 지식 연결, 확장, 도전적 질문 생성
-- **[생각-퍼즐-탐구](https://plusiam.github.io/think-puzzle-explore/)** 🆕: 체계적인 탐구 학습을 위한 3단계 사고 도구
+### 💡 주요 기능
+- ✅ 16개의 검증된 사고가시화 도구
+- ✅ 3단계 체계적 분류
+- ✅ 과목별·주제별 맞춤 추천
+- ✅ 반응형 디자인 (모바일 최적화)
+- ✅ 다크모드 지원
+- ✅ PWA(Progressive Web App) 지원
+- ✅ 오프라인 사용 가능
 
-### 💭 성찰과 메타인지 도구
-- **[ORID 성찰 도구](https://plusiam.github.io/orid-reflection-tool/)**: 객관적-반응적-해석적-결정적 4단계 성찰
-- **[ABC 생각바꾸기](https://plusiam.github.io/abc-think/)**: 정서 조절과 건강한 사고 패턴 형성
-- **[step-inside](https://plusiam.github.io/step-inside-worksheet/)**: 타인의 입장에서 생각해보는 공감 도구
-- **[인터랙티브 관점의 원](https://plusiam.github.io/interactive-viewpoints-circle/)** 🆕: 다양한 관점에서 주제를 탐구하는 인터랙티브 도구
+## 🚀 사용 방법
 
-### 🎨 창의적 표현 도구
-- **[나만의 한 줄 요약](https://plusiam.github.io/headline-maker-kids/)**: 핵심 내용을 간결하게 요약하는 능력 개발
-- **[Color, Symbol, Image](https://plusiam.github.io/color-symbol-image-worksheet/)** 🆕: 색상, 상징, 이미지로 표현하는 시각적 사고
+### 온라인 접속
+[https://plusiam.github.io/edu-thinking-toolkit/](https://plusiam.github.io/edu-thinking-toolkit/)
 
-## 🚀 빠른 시작
+### 새로운 버전 (v2) 체험
+[https://plusiam.github.io/edu-thinking-toolkit/index-v2.html](https://plusiam.github.io/edu-thinking-toolkit/index-v2.html)
 
-1. **웹사이트 방문**: https://plusiam.github.io/edu-thinking-toolkit/
-2. **도구 선택**: 수업 목표에 맞는 사고가시화 도구 클릭
-3. **바로 활용**: 별도 설치 없이 즉시 사용 가능
+## 📱 도구 목록
 
-## 📖 활용 예시
+### 도입·탐구 단계
+1. **See-Think-Wonder** - 관찰에서 시작하는 탐구
+2. **Think-Puzzle-Explore** - 알고 있는 것에서 출발하는 탐구 설계
+3. **3-2-1 Bridge** - 학습 전후 생각의 다리 놓기
+4. **Frayer Model** - 개념 탐색을 위한 4분면 사고
 
-### 국어 수업
-- 그림책 읽기 후 **See-Think-Wonder**로 관찰력과 상상력 키우기
-- 새로운 어휘 학습 시 **프레이어 모델**로 깊이 있게 이해하기
+### 종합·체계화 단계
+1. **Headlines** - 핵심을 한 문장으로 담아내기
+2. **Color, Symbol, Image** - 추상을 구체로, 생각을 이미지로
+3. **Generate-Sort-Connect-Elaborate** - 아이디어의 생성과 연결
+4. **Connect-Extend-Challenge** - 지식의 확장과 도전
+5. **Sentence-Phrase-Word** - 텍스트의 핵심 추출하기
 
-### 사회/도덕 수업
-- 역사적 인물 학습 시 **step-inside**로 공감 능력 기르기
-- 단원 학습 전후 **3-2-1 브릿지**로 사고 변화 추적하기
-- 사회 문제 토론 시 **인터랙티브 관점의 원**으로 다각도 분석
+### 심화 단계
+1. **ORID** - 4단계로 깊어지는 체계적 성찰
+2. **Step Inside** - 타인의 마음속으로 들어가기
+3. **Circle of Viewpoints** - 다양한 관점에서 바라보기
+4. **ABC 생각바꾸기** - 마음을 건강하게 조절하기
 
-### 과학 수업
-- 실험 관찰 시 **See-Think-Wonder**로 과학적 탐구력 향상
-- 새로운 개념 학습 시 **생각-퍼즐-탐구**로 체계적 접근
+## 🛠️ 기술 스택
 
-### 창의적 체험활동
-- 프로젝트 아이디어 정리 시 **생성-분류-연결-정교화** 활용
-- 활동 후 성찰 시 **ORID 성찰 도구**로 의미 있는 돌아보기
+- **Frontend**: HTML5, CSS3, JavaScript (ES6+)
+- **Framework**: Vanilla JS (프레임워크 없음)
+- **Hosting**: GitHub Pages
+- **Design**: Responsive Web Design, Dark Mode
+- **Features**: PWA, Service Worker, Local Storage
+
+## 📂 프로젝트 구조
+
+```
+edu-thinking-toolkit/
+├── index.html          # 기존 메인 페이지
+├── index-v2.html       # 3단계 체계 새 버전
+├── data/
+│   ├── tools.json      # 기존 도구 데이터
+│   └── tools-v2.json   # 3단계 체계 도구 데이터
+├── assets/
+│   ├── css/
+│   │   ├── main.css
+│   │   ├── stages.css  # 3단계 스타일
+│   │   └── ...
+│   ├── js/
+│   │   ├── tools-loader-v2.js  # 새 도구 로더
+│   │   └── ...
+│   └── images/
+├── manifest.json       # PWA 설정
+└── service-worker.js   # 오프라인 지원
+```
 
 ## 🤝 기여하기
 
-교육 현장의 목소리를 반영하여 더 나은 도구를 만들어갑니다.
-
-### 제안 및 피드백
-- 🐛 [버그 신고](https://github.com/plusiam/edu-thinking-toolkit/issues)
-- 💡 [기능 제안](https://github.com/plusiam/edu-thinking-toolkit/issues)
-- 📧 직접 문의: [Facebook @playrurulala](https://www.facebook.com/playrurulala)
-
-### 새로운 도구 제안
-1. Issues 탭에서 새로운 이슈 생성
-2. [도구 제안] 태그 추가
-3. 도구명, 목적, 활용 방법 설명
-
-## 📊 프로젝트 현황
-
-- **총 도구 수**: 16개 (지속적으로 추가 예정)
-- **지원 언어**: 한국어
-- **접근성**: WCAG 2.1 AA 기준 준수 목표
-- **브라우저 지원**: Chrome, Firefox, Safari, Edge 최신 버전
-
-## 🔮 향후 계획
-
-- [ ] 마인드맵 도구 추가
-- [ ] 피쉬본 다이어그램 추가
-- [ ] KWL 차트 추가
-- [ ] 교사용 가이드북 제작
-- [ ] 영어 버전 지원
-- [ ] 오프라인 사용 지원 (PWA)
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
 ## 📝 라이선스
 
-이 프로젝트는 교육 목적으로 자유롭게 사용할 수 있습니다. 
-- ✅ 교실에서 자유롭게 활용
-- ✅ 교육 자료로 재구성 가능
-- ✅ 비영리 교육 목적 공유 가능
-- ❌ 상업적 이용 불가
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 👨‍🏫 개발자 정보
+## 👨‍🏫 개발자
 
 **룰루랄라 한기쌤**
-- 현직 초등교사
-- 수업연구, 코딩, 시각화, 자동화에 관심
-- 교육 현장의 필요에서 시작된 프로젝트
+- Facebook: [@playrurulala](https://www.facebook.com/playrurulala)
+- GitHub: [@plusiam](https://github.com/plusiam)
 
 ## 🙏 감사의 말
 
-이 프로젝트는 다음 연구와 자료에서 영감을 받았습니다:
-- Harvard Project Zero의 Visible Thinking 연구
-- Ron Ritchhart의 "Creating Cultures of Thinking"
-- 전국의 선생님들의 귀중한 피드백
+- 하버드 프로젝트 제로(Project Zero) 연구팀
+- Visible Thinking 프레임워크 개발자들
+- 한국의 모든 선생님들께
 
 ---
 
-<p align="center">
-  <strong>🌟 교실에서 학생들의 생각이 보이는 순간, 진정한 배움이 시작됩니다 🌟</strong>
-</p>
+> "생각을 보이게 만들면, 학습이 더 깊어집니다." - Visible Thinking
 
-<p align="center">
-  Made with ❤️ for educators worldwide
-</p>
+## 📅 업데이트 로그
+
+### v3.0.0 (2025-06-15)
+- 🎉 3단계 사고가시화 체계 도입
+- 🎯 과목별·주제별 맞춤 추천 시스템 구현
+- 🎨 UI/UX 전면 개편
+- 📱 모바일 최적화 강화
+
+### v2.0.0 (2025-06-04)
+- 초기 버전 출시
+- 16개 사고가시화 도구 통합
+- PWA 지원 추가
