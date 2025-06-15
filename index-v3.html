@@ -796,6 +796,10 @@ const toolsData = {
           "flow": "아이디어 공유 → 구성 계획 → 작품 표현"
         }
       }
+    },
+    "all": {
+      "name": "전체",
+      "icon": "🌐"
     }
   },
   "skills": {
@@ -969,37 +973,78 @@ function updateThemeIcon(theme) {
     }
 }
 
-// 도구 필터링
+// 도구 필터링 (수정된 버전)
 function filterTools(query) {
     const allCards = document.querySelectorAll('.tool-card');
+    let hasVisibleCards = false;
+    
+    // 각 단계별 컨테이너
+    const containers = {
+        'exploration': document.getElementById('exploration-tools'),
+        'synthesis': document.getElementById('synthesis-tools'),
+        'deepening': document.getElementById('deepening-tools')
+    };
+    
+    // 각 단계별로 보이는 카드 수 계산
+    const visibleCounts = {
+        'exploration': 0,
+        'synthesis': 0,
+        'deepening': 0
+    };
     
     allCards.forEach(card => {
         if (!query) {
+            // 검색어가 없으면 모든 카드 표시
             card.style.display = '';
-            return;
-        }
-        
-        const toolId = card.dataset.toolId;
-        const tool = toolsData.tools.find(t => t.id === toolId);
-        
-        if (!tool) return;
-        
-        const searchTargets = [
-            tool.title,
-            tool.englishTitle,
-            tool.description,
-            ...tool.process,
-            ...tool.subjects.map(s => toolsData.subjects[s]?.name || ''),
-            ...tool.skills.map(s => toolsData.skills[s]?.name || '')
-        ].join(' ').toLowerCase();
-        
-        if (searchTargets.includes(query)) {
-            card.style.display = '';
-            card.classList.add('fade-in');
+            const stage = card.classList.contains('exploration') ? 'exploration' :
+                        card.classList.contains('synthesis') ? 'synthesis' : 'deepening';
+            visibleCounts[stage]++;
+            hasVisibleCards = true;
         } else {
-            card.style.display = 'none';
+            const toolId = card.dataset.toolId;
+            const tool = toolsData.tools.find(t => t.id === toolId);
+            
+            if (!tool) return;
+            
+            // 검색 대상 텍스트 구성
+            const searchTargets = [
+                tool.title,
+                tool.englishTitle,
+                tool.description,
+                ...tool.process,
+                ...tool.subjects.map(s => toolsData.subjects[s]?.name || ''),
+                ...tool.skills.map(s => toolsData.skills[s]?.name || '')
+            ].join(' ').toLowerCase();
+            
+            // 검색어가 포함되어 있는지 확인
+            if (searchTargets.includes(query)) {
+                card.style.display = '';
+                card.classList.add('fade-in');
+                const stage = tool.stage;
+                visibleCounts[stage]++;
+                hasVisibleCards = true;
+            } else {
+                card.style.display = 'none';
+            }
         }
     });
+    
+    // 각 단계 섹션의 표시/숨김 처리
+    Object.keys(containers).forEach(stage => {
+        const section = containers[stage].closest('.stage-section');
+        if (section) {
+            if (visibleCounts[stage] === 0 && query) {
+                section.style.display = 'none';
+            } else {
+                section.style.display = '';
+            }
+        }
+    });
+    
+    // 검색 결과가 없을 때 메시지 표시 (선택사항)
+    if (!hasVisibleCards && query) {
+        console.log('검색 결과가 없습니다:', query);
+    }
 }
 
 // 주제 옵션 로드
