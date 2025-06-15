@@ -1,0 +1,571 @@
+{
+  "stages": [
+    {
+      "id": "exploration",
+      "name": "도입·탐구",
+      "color": "#FFD93D",
+      "icon": "🟡",
+      "description": "호기심 유발, 탐구 질문 생성, 사전 지식 활성화",
+      "characteristics": ["개방적 사고", "관찰 중심", "질문 생성"]
+    },
+    {
+      "id": "synthesis",
+      "name": "종합·체계화",
+      "color": "#FF8C00",
+      "icon": "🟠",
+      "description": "정보 구조화, 개념 간 연결, 지식 체계 구축",
+      "characteristics": ["구조적 사고", "시각적 표현", "연결적 사고"]
+    },
+    {
+      "id": "deepening",
+      "name": "심화",
+      "color": "#4169E1",
+      "icon": "🔵",
+      "description": "메타인지 발달, 관점 전환, 깊은 성찰",
+      "characteristics": ["성찰적 사고", "다원적 관점", "변화 인식"]
+    }
+  ],
+  "tools": [
+    {
+      "id": "see-think-wonder",
+      "title": "보기·생각하기·궁금해하기",
+      "englishTitle": "See-Think-Wonder",
+      "icon": "🔍",
+      "stage": "exploration",
+      "stageOrder": 1,
+      "description": "관찰에서 시작하는 탐구의 첫걸음. 관찰, 추론, 질문 생성을 통해 비판적 사고력과 탐구력을 기릅니다.",
+      "process": ["관찰 (See)", "추론 (Think)", "궁금증 (Wonder)"],
+      "features": [
+        "관찰력 및 탐구력 향상",
+        "비판적 사고 개발",
+        "질문 생성 능력 강화",
+        "그림책 활용 최적화"
+      ],
+      "urls": [
+        {
+          "version": "v1",
+          "url": "https://plusiam.github.io/see-think-wonder-worksheet/",
+          "label": "기본 버전"
+        },
+        {
+          "version": "v2",
+          "url": "https://plusiam.github.io/see-think-wonder-v2/",
+          "label": "향상된 버전",
+          "isNew": true
+        },
+        {
+          "version": "template",
+          "url": "https://plusiam.github.io/see-think-wonder-templet/",
+          "label": "인쇄용 템플릿"
+        }
+      ],
+      "subjects": ["korean", "science", "social", "art"],
+      "skills": ["observation", "inquiry", "critical-thinking"],
+      "recommendedFor": {
+        "korean": ["문학 작품 도입", "시 감상"],
+        "science": ["자연 현상 관찰", "실험 전 예측"],
+        "social": ["역사 자료 분석", "지리 탐구"],
+        "art": ["작품 감상", "미술 비평"]
+      }
+    },
+    {
+      "id": "think-puzzle-explore",
+      "title": "생각-퍼즐-탐구",
+      "englishTitle": "Think-Puzzle-Explore",
+      "icon": "🧩",
+      "stage": "exploration",
+      "stageOrder": 2,
+      "description": "알고 있는 것에서 출발하는 탐구 설계. 현재 지식을 점검하고 궁금한 점을 찾아 탐구 계획을 세웁니다.",
+      "process": ["아는 것 (Think)", "궁금한 것 (Puzzle)", "알아낼 방법 (Explore)"],
+      "features": [
+        "사전 지식 활성화",
+        "호기심과 질문 생성",
+        "탐구 계획 수립",
+        "메타인지 발달"
+      ],
+      "urls": [
+        {
+          "version": "main",
+          "url": "https://plusiam.github.io/think-puzzle-explore/"
+        }
+      ],
+      "subjects": ["all"],
+      "skills": ["inquiry", "planning", "metacognition"],
+      "recommendedFor": {
+        "all": ["단원 시작", "프로젝트 기획", "탐구 학습"]
+      }
+    },
+    {
+      "id": "bridge-321",
+      "title": "3-2-1 브릿지",
+      "englishTitle": "3-2-1 Bridge",
+      "icon": "🌉",
+      "stage": "exploration",
+      "stageOrder": 3,
+      "description": "학습 전후 생각의 다리 놓기. 학습 전후의 생각 변화를 추적하고 연결고리를 찾아 메타인지를 발달시킵니다.",
+      "process": ["학습 전 (3-2-1)", "학습 활동", "학습 후 (3-2-1)", "브릿지 만들기"],
+      "features": [
+        "학습 전후 비교 분석",
+        "메타인지 능력 향상",
+        "사고 변화 추적",
+        "성찰적 학습 지원"
+      ],
+      "urls": [
+        {
+          "version": "v1",
+          "url": "https://plusiam.github.io/321-bridge-worksheet/",
+          "label": "기본 버전"
+        },
+        {
+          "version": "v2",
+          "url": "https://plusiam.github.io/321-bridge-worksheet/321.html",
+          "label": "Enhanced v2.2",
+          "isNew": true
+        }
+      ],
+      "subjects": ["all"],
+      "skills": ["metacognition", "reflection", "comparison"],
+      "recommendedFor": {
+        "all": ["개념 변화 추적", "단원 전후 비교", "오개념 수정"]
+      }
+    },
+    {
+      "id": "frayer",
+      "title": "프레이어 모델",
+      "englishTitle": "Frayer Model",
+      "icon": "📊",
+      "stage": "exploration",
+      "stageOrder": 4,
+      "description": "개념 탐색을 위한 4분면 사고. 개념을 정의, 특성, 예시, 비례시로 나누어 체계적으로 분석합니다.",
+      "process": ["정의", "특성", "예시", "비례시"],
+      "features": [
+        "개념의 깊이 있는 이해",
+        "구조화된 사고 과정",
+        "시각적 학습 지원",
+        "PDF/이미지 저장"
+      ],
+      "urls": [
+        {
+          "version": "main",
+          "url": "https://plusiam.github.io/frayer-model-worksheet/"
+        }
+      ],
+      "subjects": ["all"],
+      "skills": ["conceptual", "analysis", "organization"],
+      "recommendedFor": {
+        "korean": ["어휘 학습", "문학 용어"],
+        "math": ["수학 개념 정리"],
+        "science": ["과학 용어 이해"],
+        "social": ["사회 개념 학습"]
+      }
+    },
+    {
+      "id": "headline",
+      "title": "나만의 한 줄 요약",
+      "englishTitle": "Headlines",
+      "icon": "📝",
+      "stage": "synthesis",
+      "stageOrder": 1,
+      "description": "핵심을 한 문장으로 담아내기. 핵심 내용을 간결하고 명확하게 요약하는 능력을 기릅니다.",
+      "process": ["핵심 파악", "키워드 추출", "한 문장 요약"],
+      "features": [
+        "요약 능력 향상",
+        "핵심 파악 훈련",
+        "단계별 사고 과정",
+        "초등학생 친화적"
+      ],
+      "urls": [
+        {
+          "version": "main",
+          "url": "https://plusiam.github.io/headline-maker-kids/"
+        }
+      ],
+      "subjects": ["all"],
+      "skills": ["summarizing", "synthesis", "communication"],
+      "recommendedFor": {
+        "all": ["수업 마무리", "텍스트 요약", "핵심 정리"]
+      }
+    },
+    {
+      "id": "csi",
+      "title": "색상-상징-이미지",
+      "englishTitle": "Color, Symbol, Image",
+      "icon": "🎨",
+      "stage": "synthesis",
+      "stageOrder": 2,
+      "description": "추상을 구체로, 생각을 이미지로. 핵심 아이디어를 색상, 상징, 이미지로 표현하며 창의적 사고를 촉진합니다.",
+      "process": ["색상 선택", "상징 그리기", "이미지 표현", "의미 설명"],
+      "features": [
+        "추상적 개념의 시각화",
+        "창의적 표현력 개발",
+        "디지털/인쇄 모드 지원",
+        "자동 저장 및 이미지 저장"
+      ],
+      "urls": [
+        {
+          "version": "main",
+          "url": "https://plusiam.github.io/color-symbol-image-worksheet/"
+        }
+      ],
+      "subjects": ["korean", "social", "art", "music"],
+      "skills": ["creative", "visual", "metaphorical"],
+      "recommendedFor": {
+        "korean": ["시 창작", "주제 표현"],
+        "social": ["시대정신 표현", "문화 이해"],
+        "art": ["감정 표현", "추상화"],
+        "music": ["음악 감상", "정서 표현"]
+      }
+    },
+    {
+      "id": "generate-sort-connect-elaborate",
+      "title": "생성-분류-연결-정교화",
+      "englishTitle": "Generate-Sort-Connect-Elaborate",
+      "icon": "💡",
+      "stage": "synthesis",
+      "stageOrder": 3,
+      "description": "아이디어의 생성과 연결. 아이디어를 생성하고, 분류하며, 연결하고, 정교화하는 4단계 사고 과정입니다.",
+      "process": ["아이디어 생성", "범주별 분류", "관계 연결", "의미 정교화"],
+      "features": [
+        "캔버스 기반 아이디어 맵핑",
+        "드래그&드롭으로 자유로운 분류",
+        "아이디어 간 연결선 그리기",
+        "PNG 이미지로 한 번에 저장"
+      ],
+      "urls": [
+        {
+          "version": "main",
+          "url": "https://plusiam.github.io/generate-classify-connect-elaborate/"
+        }
+      ],
+      "subjects": ["all"],
+      "skills": ["creative", "organization", "systems-thinking"],
+      "recommendedFor": {
+        "all": ["브레인스토밍", "개념도 작성", "프로젝트 기획"]
+      }
+    },
+    {
+      "id": "connect-extend-challenge",
+      "title": "연결-확장-도전",
+      "englishTitle": "Connect-Extend-Challenge",
+      "icon": "🔗",
+      "stage": "synthesis",
+      "stageOrder": 4,
+      "description": "지식의 확장과 도전. 이미 알고 있는 것과 연결하고, 새로운 생각으로 확장하며, 도전적인 질문을 만듭니다.",
+      "process": ["기존 지식과 연결", "새로운 관점으로 확장", "도전적 질문 생성"],
+      "features": [
+        "사전 지식과의 연결",
+        "창의적 사고 확장",
+        "비판적 질문 생성",
+        "A4 가로 인쇄 최적화"
+      ],
+      "urls": [
+        {
+          "version": "main",
+          "url": "https://plusiam.github.io/connect-extend-challengge-templates/"
+        }
+      ],
+      "subjects": ["all"],
+      "skills": ["connection", "extension", "critical-thinking"],
+      "recommendedFor": {
+        "all": ["단원 마무리", "지식 확장", "심화 학습"]
+      }
+    },
+    {
+      "id": "sentence-phrase-word",
+      "title": "문장-구절-단어",
+      "englishTitle": "Sentence-Phrase-Word",
+      "icon": "📚",
+      "stage": "synthesis",
+      "stageOrder": 5,
+      "description": "텍스트의 핵심 추출하기. 의미있는 문장을 선택하고, 핵심 구절을 찾아, 중요한 단어를 추출합니다.",
+      "process": ["중요 문장 선택", "핵심 구절 찾기", "대표 단어 추출"],
+      "features": [
+        "체계적인 텍스트 분석",
+        "구조적 사고력 향상",
+        "문학 작품 탐구 최적화",
+        "1페이지 인쇄 완벽 지원"
+      ],
+      "urls": [
+        {
+          "version": "main",
+          "url": "https://plusiam.github.io/sentence-phrase-word/"
+        }
+      ],
+      "subjects": ["korean", "english"],
+      "skills": ["analysis", "synthesis", "comprehension"],
+      "recommendedFor": {
+        "korean": ["시 분석", "소설 읽기", "논설문 분석"],
+        "english": ["영어 독해", "원서 읽기"]
+      }
+    },
+    {
+      "id": "orid",
+      "title": "ORID 성찰 도구",
+      "englishTitle": "ORID Reflection",
+      "icon": "🎯",
+      "stage": "deepening",
+      "stageOrder": 1,
+      "description": "4단계로 깊어지는 체계적 성찰. 객관적 사실부터 미래 행동까지 체계적인 성찰 과정을 거칩니다.",
+      "process": ["객관적 관찰 (O)", "정서적 반응 (R)", "의미 해석 (I)", "결정과 행동 (D)"],
+      "features": [
+        "체계적인 4단계 성찰",
+        "객관적 관찰력 향상",
+        "감정 인식 및 표현",
+        "의미 도출과 행동 계획"
+      ],
+      "urls": [
+        {
+          "version": "main",
+          "url": "https://plusiam.github.io/orid-reflection-tool/"
+        }
+      ],
+      "subjects": ["all"],
+      "skills": ["reflection", "metacognition", "self-awareness"],
+      "recommendedFor": {
+        "all": ["수업 성찰", "프로젝트 평가", "경험 정리"]
+      }
+    },
+    {
+      "id": "step-inside",
+      "title": "마음속으로 들어가기",
+      "englishTitle": "Step Inside",
+      "icon": "🎭",
+      "stage": "deepening",
+      "stageOrder": 2,
+      "description": "타인의 마음속으로 들어가기. 인물의 입장이 되어 생각해보는 공감과 성찰 기반 학습 도구입니다.",
+      "process": ["인물 선택", "입장 상상", "감정 탐색", "행동 이해"],
+      "features": [
+        "영상 시청 후 내용 정리",
+        "능동적 질문 생성",
+        "인물 입장 체험",
+        "가치관 성찰"
+      ],
+      "urls": [
+        {
+          "version": "v1",
+          "url": "https://plusiam.github.io/step-inside-worksheet/"
+        },
+        {
+          "version": "v2",
+          "url": "https://plusiam.github.io/step-inside-v2/",
+          "isNew": true
+        }
+      ],
+      "subjects": ["korean", "social", "ethics"],
+      "skills": ["empathy", "perspective-taking", "emotional"],
+      "recommendedFor": {
+        "korean": ["인물 분석", "독서 감상"],
+        "social": ["역사 인물 탐구", "시민성 교육"],
+        "ethics": ["도덕적 딜레마", "가치관 탐색"]
+      }
+    },
+    {
+      "id": "circle-of-viewpoints",
+      "title": "관점의 원",
+      "englishTitle": "Circle of Viewpoints",
+      "icon": "🎯",
+      "stage": "deepening",
+      "stageOrder": 3,
+      "description": "다양한 관점에서 바라보기. 하나의 주제에 대해 여러 입장에서 생각해보고 탐구합니다.",
+      "process": ["관점 선택", "입장 탐구", "근거 제시", "종합 성찰"],
+      "features": [
+        "인터랙티브 룰렛으로 관점 선택",
+        "구조화된 3단계 탐구 과정",
+        "실시간 진행률 추적",
+        "탐구 결과 이미지 저장"
+      ],
+      "urls": [
+        {
+          "version": "main",
+          "url": "https://plusiam.github.io/interactive-viewpoints-circle/"
+        }
+      ],
+      "subjects": ["social", "ethics", "science"],
+      "skills": ["perspective-taking", "critical-thinking", "empathy"],
+      "recommendedFor": {
+        "social": ["시사 토론", "역사적 사건"],
+        "ethics": ["윤리적 쟁점", "가치 갈등"],
+        "science": ["환경 문제", "과학 윤리"]
+      }
+    },
+    {
+      "id": "abc-think",
+      "title": "ABC 생각바꾸기",
+      "englishTitle": "ABC Thinking",
+      "icon": "💭",
+      "stage": "deepening",
+      "stageOrder": 4,
+      "description": "마음을 건강하게 조절하기. 나의 생각을 돌아보며 건강한 사고 패턴을 형성합니다.",
+      "process": ["상황 인식 (A)", "생각 점검 (B)", "결과 확인 (C)", "대안 찾기"],
+      "features": [
+        "정서 조절 능력 향상",
+        "건강한 사고 패턴 형성",
+        "자기 성찰 훈련",
+        "마음 건강 관리"
+      ],
+      "urls": [
+        {
+          "version": "main",
+          "url": "https://plusiam.github.io/abc-think/"
+        }
+      ],
+      "subjects": ["counseling", "ethics", "health"],
+      "skills": ["emotional", "self-regulation", "resilience"],
+      "recommendedFor": {
+        "counseling": ["정서 지원", "또래 상담"],
+        "ethics": ["감정 조절", "갈등 해결"],
+        "health": ["스트레스 관리", "정신 건강"]
+      }
+    }
+  ],
+  "subjects": {
+    "korean": {
+      "name": "국어",
+      "icon": "📖",
+      "themes": {
+        "literature": {
+          "name": "문학 작품 분석",
+          "recommended": ["see-think-wonder", "step-inside", "csi"],
+          "flow": "작품 관찰 → 인물 공감 → 주제 시각화"
+        },
+        "writing": {
+          "name": "글쓰기",
+          "recommended": ["think-puzzle-explore", "connect-extend-challenge", "headline"],
+          "flow": "주제 탐구 → 내용 확장 → 핵심 정리"
+        },
+        "poetry": {
+          "name": "시 창작",
+          "recommended": ["zoom-in", "csi", "sentence-phrase-word"],
+          "flow": "이미지 관찰 → 감정 표현 → 언어 선택"
+        },
+        "discussion": {
+          "name": "토론·토의",
+          "recommended": ["compass-points", "circle-of-viewpoints", "4c"],
+          "flow": "입장 정리 → 관점 교환 → 심화 분석"
+        }
+      }
+    },
+    "math": {
+      "name": "수학",
+      "icon": "🔢",
+      "themes": {
+        "problem-solving": {
+          "name": "문제 해결",
+          "recommended": ["think-puzzle-explore", "generate-sort-connect-elaborate", "i-used-to-think"],
+          "flow": "문제 분석 → 전략 구성 → 오류 수정"
+        },
+        "concepts": {
+          "name": "개념 학습",
+          "recommended": ["frayer", "connect-extend-challenge", "orid"],
+          "flow": "개념 정의 → 관련 개념 연결 → 이해 성찰"
+        },
+        "patterns": {
+          "name": "규칙성 탐구",
+          "recommended": ["see-think-wonder", "zoom-in", "headline"],
+          "flow": "패턴 관찰 → 세부 분석 → 규칙 정리"
+        }
+      }
+    },
+    "science": {
+      "name": "과학",
+      "icon": "🔬",
+      "themes": {
+        "experiment": {
+          "name": "실험 설계",
+          "recommended": ["think-puzzle-explore", "generate-sort-connect-elaborate", "4c"],
+          "flow": "가설 설정 → 변인 정리 → 결과 분석"
+        },
+        "phenomena": {
+          "name": "자연 현상",
+          "recommended": ["zoom-in", "see-think-wonder", "explanation-game"],
+          "flow": "현상 관찰 → 질문 생성 → 원리 설명"
+        },
+        "environment": {
+          "name": "환경 문제",
+          "recommended": ["compass-points", "csi", "headline"],
+          "flow": "문제 분석 → 영향 시각화 → 해결책 제시"
+        }
+      }
+    },
+    "social": {
+      "name": "사회",
+      "icon": "🌏",
+      "themes": {
+        "history": {
+          "name": "역사 탐구",
+          "recommended": ["zoom-in", "circle-of-viewpoints", "step-inside"],
+          "flow": "사료 분석 → 다양한 입장 → 인물 이해"
+        },
+        "geography": {
+          "name": "지리 학습",
+          "recommended": ["see-think-wonder", "connect-extend-challenge", "csi"],
+          "flow": "지형 관찰 → 생활 연결 → 특징 시각화"
+        },
+        "current-affairs": {
+          "name": "시사 이슈",
+          "recommended": ["compass-points", "4c", "headline"],
+          "flow": "이슈 분석 → 심층 탐구 → 핵심 정리"
+        }
+      }
+    },
+    "art": {
+      "name": "예술",
+      "icon": "🎨",
+      "themes": {
+        "appreciation": {
+          "name": "작품 감상",
+          "recommended": ["see-think-wonder", "csi", "step-inside"],
+          "flow": "작품 관찰 → 느낌 표현 → 작가 이해"
+        },
+        "creation": {
+          "name": "창작 활동",
+          "recommended": ["chalk-talk", "generate-sort-connect-elaborate", "csi"],
+          "flow": "아이디어 공유 → 구성 계획 → 작품 표현"
+        }
+      }
+    }
+  },
+  "skills": {
+    "observation": { "name": "관찰력", "icon": "👁️" },
+    "inquiry": { "name": "탐구력", "icon": "🔍" },
+    "critical-thinking": { "name": "비판적 사고", "icon": "🤔" },
+    "creative": { "name": "창의성", "icon": "💡" },
+    "metacognition": { "name": "메타인지", "icon": "🧠" },
+    "empathy": { "name": "공감", "icon": "❤️" },
+    "reflection": { "name": "성찰", "icon": "🪞" },
+    "synthesis": { "name": "종합", "icon": "🔗" },
+    "communication": { "name": "소통", "icon": "💬" }
+  },
+  "pathways": {
+    "creativity": {
+      "name": "창의성 개발",
+      "stages": [
+        { "tool": "chalk-talk", "stage": "exploration" },
+        { "tool": "generate-sort-connect-elaborate", "stage": "synthesis" },
+        { "tool": "csi", "stage": "synthesis" }
+      ]
+    },
+    "critical-thinking": {
+      "name": "비판적 사고",
+      "stages": [
+        { "tool": "compass-points", "stage": "exploration" },
+        { "tool": "4c", "stage": "synthesis" },
+        { "tool": "circle-of-viewpoints", "stage": "deepening" }
+      ]
+    },
+    "collaboration": {
+      "name": "협력 학습",
+      "stages": [
+        { "tool": "think-puzzle-explore", "stage": "exploration" },
+        { "tool": "chalk-talk", "stage": "synthesis" },
+        { "tool": "micro-lab", "stage": "deepening" }
+      ]
+    }
+  },
+  "metadata": {
+    "version": "3.0",
+    "lastUpdated": "2025-06-15",
+    "totalTools": 13,
+    "author": "룰루랄라 한기쌤"
+  }
+}
