@@ -8,7 +8,15 @@ document.addEventListener('DOMContentLoaded', async function() {
         
         try {
             console.log('도구 데이터를 불러오는 중...');
-            const response = await fetch('data/tools-v2.json');
+            
+            // GitHub Pages를 위한 경로 수정
+            const basePath = window.location.pathname.includes('/edu-thinking-toolkit') 
+                ? '/edu-thinking-toolkit' 
+                : '';
+            const dataUrl = `${basePath}/data/tools-v2.json`;
+            
+            console.log('데이터 URL:', dataUrl);
+            const response = await fetch(dataUrl);
             
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
