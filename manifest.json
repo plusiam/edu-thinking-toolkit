@@ -1,0 +1,105 @@
+{
+  "name": "생각이 보이는 교실",
+  "short_name": "사고가시화",
+  "description": "초등교육을 위한 사고가시화 전략 도구 모음",
+  "lang": "ko",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "theme_color": "#4a90e2",
+  "background_color": "#667eea",
+  "icons": [
+    {
+      "src": "/assets/images/icon-72x72.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/assets/images/icon-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/assets/images/icon-128x128.png",
+      "sizes": "128x128",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/assets/images/icon-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/assets/images/icon-152x152.png",
+      "sizes": "152x152",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/assets/images/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/assets/images/icon-384x384.png",
+      "sizes": "384x384",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/assets/images/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/assets/images/screenshot-1.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "label": "홈 화면"
+    },
+    {
+      "src": "/assets/images/screenshot-2.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "label": "도구 목록"
+    }
+  ],
+  "categories": ["education", "productivity"],
+  "related_applications": [],
+  "prefer_related_applications": false,
+  "scope": "/",
+  "shortcuts": [
+    {
+      "name": "프레이어 모델",
+      "short_name": "프레이어",
+      "description": "개념 분석 도구",
+      "url": "https://plusiam.github.io/frayer-model-worksheet/",
+      "icons": [
+        {
+          "src": "/assets/images/frayer-icon.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "3-2-1 브릿지",
+      "short_name": "브릿지",
+      "description": "학습 전후 비교",
+      "url": "https://plusiam.github.io/321-bridge-worksheet/",
+      "icons": [
+        {
+          "src": "/assets/images/bridge-icon.png",
+          "sizes": "96x96"
+        }
+      ]
+    }
+  ]
+}
