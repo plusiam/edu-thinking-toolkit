@@ -4,9 +4,23 @@ document.addEventListener('DOMContentLoaded', async function() {
     
     // 도구 데이터 로드
     async function loadTools() {
+        const loadingMessage = document.getElementById('loading-message');
+        
         try {
+            console.log('도구 데이터를 불러오는 중...');
             const response = await fetch('data/tools-v2.json');
+            
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            
             toolsData = await response.json();
+            console.log('도구 데이터 로드 성공:', toolsData);
+            
+            // 로딩 메시지 숨기기
+            if (loadingMessage) {
+                loadingMessage.style.display = 'none';
+            }
             
             // 도구 표시
             displayTools();
@@ -22,6 +36,19 @@ document.addEventListener('DOMContentLoaded', async function() {
             
         } catch (error) {
             console.error('도구 데이터 로드 실패:', error);
+            
+            // 로딩 메시지를 에러 메시지로 변경
+            if (loadingMessage) {
+                loadingMessage.innerHTML = `
+                    <p style="color: var(--danger-color);">
+                        도구를 불러오는 데 실패했습니다.<br>
+                        새로고침을 시도하거나 잠시 후 다시 시도해주세요.
+                    </p>
+                    <button onclick="location.reload()" style="margin-top: 1rem; padding: 0.5rem 1rem; background: var(--primary-color); color: white; border: none; border-radius: 0.5rem; cursor: pointer;">
+                        새로고침
+                    </button>
+                `;
+            }
         }
     }
     
@@ -30,6 +57,11 @@ document.addEventListener('DOMContentLoaded', async function() {
         const explorationContainer = document.getElementById('exploration-tools');
         const synthesisContainer = document.getElementById('synthesis-tools');
         const deepeningContainer = document.getElementById('deepening-tools');
+        
+        if (!explorationContainer || !synthesisContainer || !deepeningContainer) {
+            console.error('도구 컨테이너를 찾을 수 없습니다.');
+            return;
+        }
         
         // 기존 내용 초기화
         explorationContainer.innerHTML = '';
@@ -52,6 +84,8 @@ document.addEventListener('DOMContentLoaded', async function() {
                     break;
             }
         });
+        
+        console.log('도구 표시 완료');
     }
     
     // 도구 카드 생성
@@ -106,6 +140,11 @@ document.addEventListener('DOMContentLoaded', async function() {
         const themeSelect = document.getElementById('theme-select');
         const recommendBtn = document.getElementById('get-recommendation');
         
+        if (!subjectSelect || !themeSelect || !recommendBtn) {
+            console.error('추천 시스템 요소를 찾을 수 없습니다.');
+            return;
+        }
+        
         // 과목 선택 이벤트
         subjectSelect.addEventListener('change', function() {
             const selectedSubject = this.value;
@@ -154,7 +193,7 @@ document.addEventListener('DOMContentLoaded', async function() {
         const resultContainer = document.getElementById('recommendation-result');
         const subjectData = toolsData.subjects[subject];
         
-        if (!subjectData) return;
+        if (!subjectData || !resultContainer) return;
         
         let recommendedTools = [];
         let flow = '';
@@ -229,6 +268,11 @@ document.addEventListener('DOMContentLoaded', async function() {
     function initializeSearch() {
         const searchInput = document.getElementById('search-input');
         
+        if (!searchInput) {
+            console.error('검색 입력 필드를 찾을 수 없습니다.');
+            return;
+        }
+        
         searchInput.addEventListener('input', function() {
             const query = this.value.toLowerCase().trim();
             filterTools(query);
@@ -271,13 +315,17 @@ document.addEventListener('DOMContentLoaded', async function() {
         // 빈 섹션 처리
         ['exploration-tools', 'synthesis-tools', 'deepening-tools'].forEach(containerId => {
             const container = document.getElementById(containerId);
+            if (!container) return;
+            
             const visibleCards = container.querySelectorAll('.tool-card:not([style*="display: none"])');
             const section = container.closest('.stage-section');
             
-            if (visibleCards.length === 0 && query) {
-                section.style.display = 'none';
-            } else {
-                section.style.display = '';
+            if (section) {
+                if (visibleCards.length === 0 && query) {
+                    section.style.display = 'none';
+                } else {
+                    section.style.display = '';
+                }
             }
         });
     }
@@ -297,6 +345,8 @@ document.addEventListener('DOMContentLoaded', async function() {
 // 테마 전환 기능
 document.addEventListener('DOMContentLoaded', function() {
     const themeToggle = document.getElementById('theme-toggle');
+    if (!themeToggle) return;
+    
     const currentTheme = localStorage.getItem('theme') || 'light';
     
     // 초기 테마 설정
@@ -314,7 +364,9 @@ document.addEventListener('DOMContentLoaded', function() {
     
     function updateThemeIcon(theme) {
         const icon = themeToggle.querySelector('.theme-icon');
-        icon.textContent = theme === 'light' ? '☀️' : '🌙';
+        if (icon) {
+            icon.textContent = theme === 'light' ? '☀️' : '🌙';
+        }
     }
 });
 
