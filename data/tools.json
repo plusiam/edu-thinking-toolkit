@@ -72,8 +72,23 @@
         "마음 건강 관리"
       ],
       "url": "https://plusiam.github.io/abc-think/",
-      "category": "emotional",
+      "category": "emotion-metacognition",
       "isNew": false
+    },
+    {
+      "id": "emotion-weather-diary",
+      "title": "나의 감정 날씨 일기",
+      "icon": "🌈",
+      "description": "감정을 날씨로 표현하고 신체 감각과 연결하여 정서 인식과 조절 능력을 키우는 인터랙티브 감정 일기입니다.",
+      "features": [
+        "8가지 날씨로 감정 표현",
+        "신체 감각과 감정 연결",
+        "감정의 원인과 결과 탐색",
+        "자동저장 및 이미지 저장"
+      ],
+      "url": "https://plusiam.github.io/emotion-weather-diary/",
+      "category": "emotion-metacognition",
+      "isNew": true
     },
     {
       "id": "see-think-wonder",
@@ -263,9 +278,9 @@
       "description": "창의적 사고와 표현을 돕는 도구"
     },
     {
-      "id": "emotional",
-      "name": "정서 조절",
-      "description": "감정과 마음을 다루는 도구"
+      "id": "emotion-metacognition",
+      "name": "정서·메타인지",
+      "description": "감정 인식, 조절 및 자기 성찰을 돕는 통합 도구"
     },
     {
       "id": "empathy",
@@ -289,9 +304,9 @@
     }
   ],
   "metadata": {
-    "version": "2.0",
-    "lastUpdated": "2025-06-15",
-    "totalTools": 16,
+    "version": "2.1",
+    "lastUpdated": "2025-08-12",
+    "totalTools": 17,
     "author": "룰루랄라 한기쌤"
   }
 }
