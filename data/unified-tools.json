@@ -1,0 +1,595 @@
+{
+  "version": "4.0.0",
+  "lastUpdated": "2025-09-01",
+  "metadata": {
+    "totalTools": 17,
+    "stages": 4,
+    "subjects": 8
+  },
+  "stages": {
+    "1": {
+      "id": "exploration",
+      "name": "도입·탐구",
+      "description": "호기심 유발, 탐구 질문 생성, 사전 지식 활성화",
+      "color": "#FFD93D",
+      "icon": "🔍",
+      "characteristics": ["개방적 사고", "관찰 중심", "질문 생성"]
+    },
+    "2": {
+      "id": "synthesis",
+      "name": "종합·체계화",
+      "description": "정보 구조화, 개념 간 연결, 지식 체계 구축",
+      "color": "#FF6B6B",
+      "icon": "🔗",
+      "characteristics": ["구조적 사고", "시각적 표현", "연결적 사고"]
+    },
+    "3": {
+      "id": "deepening",
+      "name": "심화",
+      "description": "메타인지 발달, 관점 전환, 깊은 성찰",
+      "color": "#4ECDC4",
+      "icon": "💎",
+      "characteristics": ["성찰적 사고", "다원적 관점", "변화 인식"]
+    },
+    "4": {
+      "id": "emotional",
+      "name": "정서·메타인지",
+      "description": "감정 인식과 조절, 자기 성찰 능력 향상",
+      "color": "#A8E6CF",
+      "icon": "💝",
+      "characteristics": ["정서 지능", "신체 감각 인식", "메타인지 통합"]
+    }
+  },
+  "tools": [
+    {
+      "id": "see-think-wonder",
+      "name": "See-Think-Wonder",
+      "koreanName": "보고-생각하고-궁금해하기",
+      "stage": 1,
+      "category": "exploration",
+      "icon": "👁️",
+      "description": "관찰에서 시작하는 탐구",
+      "purpose": "시각 자료를 통해 관찰력을 기르고 호기심을 자극",
+      "difficulty": "easy",
+      "timeRequired": "20-30분",
+      "groupSize": "개인/소그룹/전체",
+      "subjects": ["국어", "과학", "미술", "사회"],
+      "steps": [
+        "무엇이 보이나요? (관찰)",
+        "무엇을 생각하나요? (해석)",
+        "무엇이 궁금한가요? (질문)"
+      ],
+      "materials": ["이미지", "실물", "영상"],
+      "examples": {
+        "science": "현미경 관찰 활동",
+        "art": "명화 감상",
+        "korean": "시 읽기",
+        "social": "역사 사진 분석"
+      },
+      "tips": [
+        "판단하지 말고 관찰에 집중하세요",
+        "모든 의견을 존중하고 기록하세요",
+        "충분한 시간을 주세요"
+      ],
+      "relatedTools": ["think-puzzle-explore", "zoom-in", "frayer-model"],
+      "digitalTemplate": true,
+      "printable": true
+    },
+    {
+      "id": "think-puzzle-explore",
+      "name": "Think-Puzzle-Explore",
+      "koreanName": "생각-의문-탐구",
+      "stage": 1,
+      "category": "exploration",
+      "icon": "🧩",
+      "description": "알고 있는 것에서 출발하는 탐구 설계",
+      "purpose": "사전 지식 활성화와 탐구 질문 생성",
+      "difficulty": "easy",
+      "timeRequired": "30-40분",
+      "groupSize": "소그룹/전체",
+      "subjects": ["과학", "사회", "수학"],
+      "steps": [
+        "이미 알고 있는 것은? (Think)",
+        "궁금한 것은? (Puzzle)",
+        "어떻게 알아볼까? (Explore)"
+      ],
+      "materials": ["KWL 차트", "포스트잇"],
+      "tips": [
+        "브레인스토밍으로 시작하세요",
+        "모든 질문을 가치있게 다루세요",
+        "탐구 방법을 구체적으로 계획하세요"
+      ],
+      "relatedTools": ["see-think-wonder", "kwl-chart"],
+      "digitalTemplate": true,
+      "printable": true
+    },
+    {
+      "id": "3-2-1-bridge",
+      "name": "3-2-1 Bridge",
+      "koreanName": "3-2-1 생각의 다리",
+      "stage": 1,
+      "category": "exploration",
+      "icon": "🌉",
+      "description": "학습 전후 생각의 변화 추적",
+      "purpose": "학습을 통한 인식 변화 시각화",
+      "difficulty": "medium",
+      "timeRequired": "수업 전후 각 15분",
+      "groupSize": "개인",
+      "subjects": ["모든 교과"],
+      "steps": [
+        "학습 전: 3개 단어, 2개 질문, 1개 비유",
+        "학습 활동",
+        "학습 후: 3개 단어, 2개 질문, 1개 비유",
+        "변화 비교 및 성찰"
+      ],
+      "materials": ["브릿지 워크시트"],
+      "tips": [
+        "전후 비교가 핵심입니다",
+        "변화의 이유를 성찰하세요",
+        "시각적으로 연결하여 표현하세요"
+      ],
+      "relatedTools": ["before-after", "used-to-think"],
+      "digitalTemplate": true,
+      "printable": true
+    },
+    {
+      "id": "frayer-model",
+      "name": "Frayer Model",
+      "koreanName": "프레이어 모델",
+      "stage": 1,
+      "category": "exploration",
+      "icon": "🔲",
+      "description": "개념 탐색을 위한 4분면 사고",
+      "purpose": "핵심 개념의 다각적 이해",
+      "difficulty": "medium",
+      "timeRequired": "30-40분",
+      "groupSize": "개인/소그룹",
+      "subjects": ["수학", "과학", "사회"],
+      "steps": [
+        "중심에 핵심 개념 작성",
+        "정의 작성",
+        "특징 나열",
+        "예시 제시",
+        "비예시 제시"
+      ],
+      "materials": ["4분면 워크시트"],
+      "tips": [
+        "구체적인 예시를 충분히 제시하세요",
+        "비예시가 이해를 깊게 합니다"
+      ],
+      "relatedTools": ["concept-map", "word-web"],
+      "digitalTemplate": true,
+      "printable": true
+    },
+    {
+      "id": "headlines",
+      "name": "Headlines",
+      "koreanName": "헤드라인",
+      "stage": 2,
+      "category": "synthesis",
+      "icon": "📰",
+      "description": "핵심을 한 문장으로 담아내기",
+      "purpose": "핵심 내용 요약 및 종합 능력 개발",
+      "difficulty": "medium",
+      "timeRequired": "20-30분",
+      "groupSize": "개인/소그룹",
+      "subjects": ["국어", "사회", "과학"],
+      "steps": [
+        "학습 내용 전체 검토",
+        "핵심 메시지 추출",
+        "헤드라인 작성",
+        "부제목 추가 (선택)",
+        "공유 및 피드백"
+      ],
+      "materials": ["신문 형식 템플릿"],
+      "tips": [
+        "간결하고 임팩트 있게 작성하세요",
+        "독자의 관심을 끌 수 있도록 하세요",
+        "5W1H를 고려하세요"
+      ],
+      "relatedTools": ["summary-pyramid", "one-sentence"],
+      "digitalTemplate": true,
+      "printable": true
+    },
+    {
+      "id": "csi",
+      "name": "Color-Symbol-Image",
+      "koreanName": "색-상징-이미지",
+      "stage": 2,
+      "category": "synthesis",
+      "icon": "🎨",
+      "description": "추상을 구체로, 생각을 이미지로",
+      "purpose": "추상적 개념의 시각화",
+      "difficulty": "easy",
+      "timeRequired": "25-35분",
+      "groupSize": "개인",
+      "subjects": ["국어", "미술", "도덕", "사회"],
+      "steps": [
+        "핵심 개념/주제 선정",
+        "연상되는 색상 선택 및 이유",
+        "상징 그리기 및 설명",
+        "이미지 그리기 및 설명",
+        "전체 연결하여 설명"
+      ],
+      "materials": ["색연필", "도화지"],
+      "tips": [
+        "직관적인 선택을 존중하세요",
+        "설명이 중요합니다",
+        "다양한 해석을 인정하세요"
+      ],
+      "relatedTools": ["sketch-to-stretch", "metaphor-map"],
+      "digitalTemplate": true,
+      "printable": true
+    },
+    {
+      "id": "generate-sort-connect-elaborate",
+      "name": "Generate-Sort-Connect-Elaborate",
+      "koreanName": "생성-분류-연결-정교화",
+      "stage": 2,
+      "category": "synthesis",
+      "icon": "🔀",
+      "description": "아이디어의 생성과 체계적 연결",
+      "purpose": "창의적 사고와 체계적 정리",
+      "difficulty": "high",
+      "timeRequired": "45-60분",
+      "groupSize": "소그룹",
+      "subjects": ["과학", "사회", "프로젝트"],
+      "steps": [
+        "아이디어 브레인스토밍 (Generate)",
+        "유사한 것끼리 분류 (Sort)",
+        "연결선 그리기 (Connect)",
+        "관계 설명하기 (Elaborate)"
+      ],
+      "materials": ["포스트잇", "큰 종이", "색펜"],
+      "tips": [
+        "충분한 아이디어를 생성하세요",
+        "분류 기준을 명확히 하세요",
+        "연결의 이유를 설명하세요"
+      ],
+      "relatedTools": ["concept-map", "affinity-diagram"],
+      "digitalTemplate": true,
+      "printable": true
+    },
+    {
+      "id": "connect-extend-challenge",
+      "name": "Connect-Extend-Challenge",
+      "koreanName": "연결-확장-도전",
+      "stage": 2,
+      "category": "synthesis",
+      "icon": "🔗",
+      "description": "지식의 연결과 확장",
+      "purpose": "기존 지식과 새 학습 내용 통합",
+      "difficulty": "medium",
+      "timeRequired": "30-40분",
+      "groupSize": "개인/소그룹",
+      "subjects": ["모든 교과"],
+      "steps": [
+        "기존 지식과 연결점 찾기 (Connect)",
+        "새롭게 확장된 생각 (Extend)",
+        "여전히 어렵거나 도전적인 부분 (Challenge)"
+      ],
+      "materials": ["CEC 워크시트"],
+      "tips": [
+        "구체적인 연결점을 찾으세요",
+        "확장된 사고를 명확히 표현하세요",
+        "도전 과제를 긍정적으로 받아들이세요"
+      ],
+      "relatedTools": ["kwl", "exit-ticket"],
+      "digitalTemplate": true,
+      "printable": true
+    },
+    {
+      "id": "sentence-phrase-word",
+      "name": "Sentence-Phrase-Word",
+      "koreanName": "문장-구-단어",
+      "stage": 2,
+      "category": "synthesis",
+      "icon": "📝",
+      "description": "텍스트의 핵심 추출하기",
+      "purpose": "핵심 내용 단계적 압축",
+      "difficulty": "easy",
+      "timeRequired": "20-30분",
+      "groupSize": "개인",
+      "subjects": ["국어", "영어", "사회"],
+      "steps": [
+        "인상 깊은 문장 선택",
+        "핵심 구절 선택",
+        "가장 중요한 단어 선택",
+        "선택 이유 설명",
+        "공유 및 토론"
+      ],
+      "materials": ["텍스트", "하이라이터"],
+      "tips": [
+        "직관적 선택을 믿으세요",
+        "이유 설명이 중요합니다",
+        "다양한 관점을 존중하세요"
+      ],
+      "relatedTools": ["word-phrase-sentence", "zoom-in"],
+      "digitalTemplate": true,
+      "printable": true
+    },
+    {
+      "id": "orid",
+      "name": "ORID",
+      "koreanName": "ORID 성찰법",
+      "stage": 3,
+      "category": "deepening",
+      "icon": "🔄",
+      "description": "4단계로 깊어지는 체계적 성찰",
+      "purpose": "경험의 체계적 성찰과 의미 도출",
+      "difficulty": "high",
+      "timeRequired": "40-50분",
+      "groupSize": "개인/소그룹",
+      "subjects": ["도덕", "사회", "프로젝트 평가"],
+      "steps": [
+        "Objective: 객관적 사실 관찰",
+        "Reflective: 느낌과 감정 탐색",
+        "Interpretive: 의미와 가치 해석",
+        "Decisional: 결정과 실천 계획"
+      ],
+      "materials": ["ORID 워크시트"],
+      "tips": [
+        "각 단계를 충분히 탐색하세요",
+        "판단을 보류하고 관찰하세요",
+        "실천 계획을 구체적으로 세우세요"
+      ],
+      "relatedTools": ["what-so-what-now-what", "critical-incident"],
+      "digitalTemplate": true,
+      "printable": true
+    },
+    {
+      "id": "step-inside",
+      "name": "Step Inside",
+      "koreanName": "마음 속으로 들어가기",
+      "stage": 3,
+      "category": "deepening",
+      "icon": "👤",
+      "description": "타인의 관점에서 생각하기",
+      "purpose": "공감 능력과 관점 전환 능력 개발",
+      "difficulty": "medium",
+      "timeRequired": "30-40분",
+      "groupSize": "개인/소그룹",
+      "subjects": ["국어", "도덕", "사회", "역사"],
+      "steps": [
+        "인물/대상 선택",
+        "그들이 보는 것은?",
+        "그들이 생각하는 것은?",
+        "그들이 느끼는 것은?",
+        "그들이 궁금한 것은?"
+      ],
+      "materials": ["역할 카드", "상황 설명"],
+      "tips": [
+        "깊이 몰입하세요",
+        "상상력을 발휘하세요",
+        "다양한 감정을 탐색하세요"
+      ],
+      "relatedTools": ["circle-of-viewpoints", "role-play"],
+      "digitalTemplate": true,
+      "printable": true
+    },
+    {
+      "id": "circle-of-viewpoints",
+      "name": "Circle of Viewpoints",
+      "koreanName": "관점의 원",
+      "stage": 3,
+      "category": "deepening",
+      "icon": "👥",
+      "description": "다양한 관점에서 바라보기",
+      "purpose": "다원적 사고와 관점 이해",
+      "difficulty": "high",
+      "timeRequired": "45-60분",
+      "groupSize": "소그룹",
+      "subjects": ["사회", "도덕", "토론"],
+      "steps": [
+        "중심 이슈 설정",
+        "다양한 이해관계자 파악",
+        "각 관점에서 생각하기",
+        "관점들 간 연결 찾기",
+        "종합적 이해 도출"
+      ],
+      "materials": ["원형 다이어그램", "역할 카드"],
+      "tips": [
+        "모든 관점을 공정하게 다루세요",
+        "상충되는 관점도 인정하세요",
+        "공통점과 차이점을 찾으세요"
+      ],
+      "relatedTools": ["step-inside", "stakeholder-analysis"],
+      "digitalTemplate": true,
+      "printable": true
+    },
+    {
+      "id": "emotion-weather-diary",
+      "name": "Emotion Weather Diary",
+      "koreanName": "나의 감정 날씨 일기",
+      "stage": 4,
+      "category": "emotional",
+      "icon": "🌤️",
+      "description": "감정을 날씨로 표현하며 신체 감각과 연결",
+      "purpose": "정서 인식과 신체 감각 통합",
+      "difficulty": "easy",
+      "timeRequired": "15-20분",
+      "groupSize": "개인",
+      "subjects": ["도덕", "상담", "학급 운영"],
+      "steps": [
+        "오늘의 감정 날씨 선택",
+        "신체 감각 인식하기",
+        "감정의 원인 탐색",
+        "필요한 것 파악",
+        "스스로 위로하기"
+      ],
+      "materials": ["감정 날씨 카드", "신체 그림"],
+      "tips": [
+        "매일 꾸준히 기록하세요",
+        "판단하지 말고 관찰하세요",
+        "작은 변화도 소중히 여기세요"
+      ],
+      "relatedTools": ["abc-thinking", "feeling-wheel"],
+      "digitalTemplate": true,
+      "printable": true
+    },
+    {
+      "id": "abc-thinking-change",
+      "name": "ABC Thinking Change",
+      "koreanName": "ABC 생각바꾸기",
+      "stage": 4,
+      "category": "emotional",
+      "icon": "🔄",
+      "description": "마음을 건강하게 조절하는 인지 도구",
+      "purpose": "부정적 사고 패턴 인식과 전환",
+      "difficulty": "medium",
+      "timeRequired": "30-40분",
+      "groupSize": "개인/소그룹",
+      "subjects": ["도덕", "상담"],
+      "steps": [
+        "A: 상황(Activating event) 기록",
+        "B: 생각(Belief) 파악",
+        "C: 결과(Consequence) 인식",
+        "D: 반박(Dispute) - 다른 생각 찾기",
+        "E: 효과(Effect) - 새로운 결과"
+      ],
+      "materials": ["ABC 워크시트"],
+      "tips": [
+        "자동적 사고를 포착하세요",
+        "증거를 찾아보세요",
+        "균형잡힌 사고를 연습하세요"
+      ],
+      "relatedTools": ["emotion-weather-diary", "thought-bubbles"],
+      "digitalTemplate": true,
+      "printable": true
+    },
+    {
+      "id": "zoom-in",
+      "name": "Zoom In",
+      "koreanName": "점진적 공개",
+      "stage": 1,
+      "category": "exploration",
+      "icon": "🔍",
+      "description": "부분에서 전체로 확장하는 관찰",
+      "purpose": "관찰력과 추론 능력 개발",
+      "difficulty": "easy",
+      "timeRequired": "20-30분",
+      "groupSize": "전체/소그룹",
+      "subjects": ["미술", "역사", "과학"],
+      "steps": [
+        "작은 부분만 공개",
+        "관찰과 추측",
+        "점진적으로 확대",
+        "가설 수정",
+        "전체 공개 및 확인"
+      ],
+      "materials": ["단계별 이미지"],
+      "tips": [
+        "서두르지 마세요",
+        "모든 추측을 기록하세요",
+        "변화 과정을 성찰하세요"
+      ],
+      "relatedTools": ["see-think-wonder", "mystery-box"],
+      "digitalTemplate": true,
+      "printable": false
+    },
+    {
+      "id": "chalk-talk",
+      "name": "Chalk Talk",
+      "koreanName": "침묵의 대화",
+      "stage": 2,
+      "category": "synthesis",
+      "icon": "✏️",
+      "description": "글로 나누는 조용한 토론",
+      "purpose": "모든 학생의 참여와 깊은 사고",
+      "difficulty": "medium",
+      "timeRequired": "30-40분",
+      "groupSize": "전체",
+      "subjects": ["모든 교과"],
+      "steps": [
+        "중심 질문 제시",
+        "침묵 속에서 글로 답변",
+        "다른 사람 의견에 연결",
+        "질문과 답변 추가",
+        "전체 패턴 관찰"
+      ],
+      "materials": ["큰 종이", "마커"],
+      "tips": [
+        "완전한 침묵을 유지하세요",
+        "시각적 연결을 만드세요",
+        "충분한 시간을 주세요"
+      ],
+      "relatedTools": ["graffiti-wall", "silent-discussion"],
+      "digitalTemplate": true,
+      "printable": false
+    },
+    {
+      "id": "compass-points",
+      "name": "Compass Points",
+      "koreanName": "나침반 사고",
+      "stage": 3,
+      "category": "deepening",
+      "icon": "🧭",
+      "description": "4방향으로 생각 정리하기",
+      "purpose": "균형잡힌 평가와 의사결정",
+      "difficulty": "medium",
+      "timeRequired": "30-40분",
+      "groupSize": "소그룹",
+      "subjects": ["프로젝트 평가", "의사결정"],
+      "steps": [
+        "E(East): 흥미로운 점",
+        "W(West): 걱정되는 점",
+        "N(North): 필요한 것",
+        "S(South): 다음 단계"
+      ],
+      "materials": ["나침반 다이어그램"],
+      "tips": [
+        "모든 방향을 균형있게 탐색하세요",
+        "구체적으로 작성하세요",
+        "실행 가능한 계획을 세우세요"
+      ],
+      "relatedTools": ["swot", "pros-cons"],
+      "digitalTemplate": true,
+      "printable": true
+    }
+  ],
+  "subjectRecommendations": {
+    "korean": {
+      "recommended": ["see-think-wonder", "sentence-phrase-word", "step-inside", "csi"],
+      "description": "텍스트 분석과 창의적 표현에 적합한 도구들"
+    },
+    "math": {
+      "recommended": ["frayer-model", "think-puzzle-explore", "3-2-1-bridge"],
+      "description": "개념 이해와 문제 해결 과정에 효과적"
+    },
+    "science": {
+      "recommended": ["see-think-wonder", "think-puzzle-explore", "generate-sort-connect-elaborate"],
+      "description": "과학적 탐구와 실험 설계에 유용"
+    },
+    "social": {
+      "recommended": ["circle-of-viewpoints", "step-inside", "orid", "headlines"],
+      "description": "역사적 사건과 사회 현상 분석에 적합"
+    },
+    "art": {
+      "recommended": ["csi", "see-think-wonder", "zoom-in"],
+      "description": "작품 감상과 창작 활동에 효과적"
+    },
+    "ethics": {
+      "recommended": ["step-inside", "circle-of-viewpoints", "emotion-weather-diary", "abc-thinking-change"],
+      "description": "도덕적 판단과 정서 학습에 유용"
+    }
+  },
+  "searchTags": {
+    "see-think-wonder": ["관찰", "탐구", "호기심", "시각적사고"],
+    "think-puzzle-explore": ["질문", "탐구설계", "사전지식"],
+    "3-2-1-bridge": ["변화", "성찰", "전후비교"],
+    "frayer-model": ["개념", "정의", "예시", "분석"],
+    "headlines": ["요약", "핵심", "종합"],
+    "csi": ["시각화", "상징", "은유"],
+    "generate-sort-connect-elaborate": ["브레인스토밍", "분류", "연결", "창의성"],
+    "connect-extend-challenge": ["연결", "확장", "도전"],
+    "sentence-phrase-word": ["텍스트분석", "압축", "핵심추출"],
+    "orid": ["성찰", "평가", "의사결정"],
+    "step-inside": ["공감", "역할", "관점"],
+    "circle-of-viewpoints": ["다관점", "토론", "이해관계"],
+    "emotion-weather-diary": ["감정", "정서", "자기인식"],
+    "abc-thinking-change": ["인지", "사고전환", "정서조절"],
+    "zoom-in": ["관찰", "추론", "점진적"],
+    "chalk-talk": ["침묵토론", "참여", "협력"],
+    "compass-points": ["평가", "의사결정", "계획"]
+  }
+}
